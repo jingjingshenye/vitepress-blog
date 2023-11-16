@@ -1,4 +1,4 @@
-call yarn docs:build
+call yarn build
 cd docs/.vitepress/dist
 
 git init
