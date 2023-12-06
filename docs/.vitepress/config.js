@@ -22,6 +22,13 @@ export default {
 
     sidebar: [
       {
+        text: "nav",
+        items: [
+          { text: "website", link: "/websiteNav/website" },
+          { text: "tool", link: "/websiteNav/tool" },
+        ],
+      },
+      {
         text: "article",
         items: [
           { text: "git", link: "/articles/git" },
