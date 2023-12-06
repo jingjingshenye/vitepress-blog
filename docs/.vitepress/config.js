@@ -1,37 +1,40 @@
 export default {
-  title: "我的博客",
-  description: "XXX",
-  base: '/blog/',
+  title: "my notebook",
+  description: "",
+  base: "/blog/",
   locales: {
     "/": {
       lang: "zh-CN",
     },
   },
   themeConfig: {
+    logo: "",
     nav: [
       { text: "首页", link: "/" },
       {
-        text: "codinglin 的博客",
+        text: "常用链接",
         items: [
           { text: "掘金", link: "https://juejin.cn/user/726107228492253" },
           { text: "Github", link: "https://github.com/coding-lin" },
         ],
       },
     ],
+
     sidebar: [
       {
-        title: "欢迎学习",
-        path: "/",
-        collapsable: false, // 是否折叠
-        children: [{ title: "博客简介", path: "/" }],
+        text: "article",
+        items: [
+          { text: "git", link: "/articles/git" },
+          { text: "markdown语法", link: "/articles/mdsyntax" },
+        ],
       },
       {
-        title: "基础篇",
-        path: "/handbook/1",
-        collapsable: true,
-        children: [
-          { title: "第一篇", path: "/handbook/1" },
-          { title: "第二篇", path: "/handbook/2" },
+        text: "project",
+        items: [
+          {
+            text: "threejs demo",
+            link: "/project/threejs",
+          },
         ],
       },
     ],
