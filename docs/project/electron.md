@@ -1,13 +1,13 @@
 # 项目demo
 
-[项目一](https://jingjingshenye.github.io/threejs-blog/)
+[项目一](https://jingjingshenye.github.io/electron-blog/)
 
-canvas画板
-<!-- 
-[项目二](https://jingjingshenye.github.io/threejs-blog/threejs-water.html)
+electron 音乐播放器
 
-threejs 粒子效果
+<!-- [项目二](https://jingjingshenye.github.io/electron-blog/electron-music.html)
 
-[项目三](https://jingjingshenye.github.io/threejs-blog/threejs-particle.html) -->
+electron 视频播放器
 
-<!-- threejs 子效果2 -->
+[项目三](https://jingjingshenye.github.io/electron-blog/electron-video.html)
+
+electron 图片查看器 -->
