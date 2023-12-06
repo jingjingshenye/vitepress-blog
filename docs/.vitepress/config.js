@@ -47,13 +47,13 @@ export default {
             text: "video",
             link: "/project/video",
           },
+          {
+            text: "weboffice",
+            link: "/project/onlineOffice",
+          },
           // {
           //   text: "ide",
           //   link: "/project/ide",
-          // },
-          // {
-          //   text: "onlineOffice",
-          //   link: "/project/onlineOffice",
           // },
           // {
           //   text: "lowcode",
