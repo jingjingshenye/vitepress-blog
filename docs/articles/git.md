@@ -1,6 +1,8 @@
-start
+# git相关
 
-git 超时需要翻墙，设置
+## git 设置代理
+
+git 超时需要魔法，设置
 git config --global http.proxy 127.0.0.1:7890
 git config --global https.proxy 127.0.0.1:7890
 

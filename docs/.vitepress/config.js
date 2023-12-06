@@ -32,9 +32,37 @@ export default {
         text: "project",
         items: [
           {
-            text: "threejs demo",
+            text: "threejs",
             link: "/project/threejs",
           },
+          {
+            text: "canvas",
+            link: "/project/canvas",
+          },
+          {
+            text: "electron",
+            link: "/project/electron",
+          },
+          {
+            text: "video",
+            link: "/project/video",
+          },
+          // {
+          //   text: "ide",
+          //   link: "/project/ide",
+          // },
+          // {
+          //   text: "onlineOffice",
+          //   link: "/project/onlineOffice",
+          // },
+          // {
+          //   text: "lowcode",
+          //   link: "/project/lowcode",
+          // },
+          // {
+          //   text: "flutter",
+          //   link: "/project/flutter",
+          // },
         ],
       },
     ],
