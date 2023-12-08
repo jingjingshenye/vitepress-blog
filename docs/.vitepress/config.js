@@ -33,6 +33,7 @@ export default {
         items: [
           { text: "git", link: "/articles/git" },
           { text: "markdown语法", link: "/articles/mdsyntax" },
+          { text: "gitpage", link: "/articles/gitpage" },
         ],
       },
       {
@@ -51,20 +52,24 @@ export default {
             link: "/project/electron",
           },
           {
-            text: "video",
-            link: "/project/video",
+            text: "editor",
+            link: "/project/editor",
           },
           {
-            text: "weboffice",
-            link: "/project/onlineOffice",
+            text: "lowcode",
+            link: "/project/lowcode",
           },
           // {
           //   text: "ide",
           //   link: "/project/ide",
           // },
           // {
-          //   text: "lowcode",
-          //   link: "/project/lowcode",
+          //   text: "video",
+          //   link: "/project/video",
+          // },
+          // {
+          //   text: "weboffice",
+          //   link: "/project/weboffice",
           // },
           // {
           //   text: "flutter",
