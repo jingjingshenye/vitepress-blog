@@ -1,10 +1,12 @@
-<script setup>
-import IconBlock from '../components/IconBlock.vue'
-import websiteData from "../common/data.js";
-</script>
-
-# 常用网站
-
+---
+layout: page
 ---
 
-<IconBlock :websiteData="websiteData" />
+<script setup>
+import WebsiteList from '../components/WebsiteList.vue'
+import {websiteDataList} from "../common/website.js";
+</script>
+
+<!-- # 常用网站 -->
+
+<WebsiteList :websiteData="websiteDataList" />

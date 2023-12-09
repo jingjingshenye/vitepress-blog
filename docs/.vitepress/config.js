@@ -25,7 +25,7 @@ export default {
         text: "nav",
         items: [
           { text: "website", link: "/websiteNav/website" },
-          { text: "tool", link: "/websiteNav/tool" },
+          // { text: "tool", link: "/websiteNav/tool" },
         ],
       },
       {
