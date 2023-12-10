@@ -34,6 +34,7 @@ export default {
           { text: "git", link: "/articles/git" },
           { text: "markdown语法", link: "/articles/mdsyntax" },
           { text: "gitpage", link: "/articles/gitpage" },
+          { text: "threejs环境搭建", link: "/articles/threejs-env" },
         ],
       },
       {
