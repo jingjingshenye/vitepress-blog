@@ -3,13 +3,12 @@
 
 ## 安装依赖
 
-```javascript
+```bash
 npm create vue@latest
 yarn add three
 yarn add dat.gui
 add gsap
 yarn add mitt //事件通信
-
 ```
 
 ## 代码封装
@@ -104,7 +103,8 @@ export default orbitcontrols;
 
 ```
 
-vue页引入
+resize
+
 ```javascript
 import camera from "./camera";
 import renderer from "./renderer";
@@ -149,7 +149,9 @@ const box = new THREE.Mesh(boxGeometry, boxMaterial);
 export { box };
 ```
 
-```javascript
+vue 页
+
+```vue
 <script setup>
 import { onMounted, ref } from "vue";
 import scene from "../three/scene";
