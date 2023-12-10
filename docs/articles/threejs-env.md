@@ -4,15 +4,10 @@
 ## 安装依赖
 
 ```javascript
-
 npm create vue@latest
-
 yarn add three
-
 yarn add dat.gui
-
-yarn add gsap
-
+add gsap
 yarn add mitt //事件通信
 
 ```
@@ -21,6 +16,8 @@ yarn add mitt //事件通信
 
 src路径下创建three文件夹，分别封装camera、scene、renderer等
 
+camera 
+
 ```javascript
 import * as THREE from "three";
 // 创建透视相机
@@ -28,7 +25,7 @@ const camera = new THREE.PerspectiveCamera(
   75,
   window.innerHeight / window.innerHeight,
   1,
-  100000
+  1000
 );
 // 设置相机位置
 // object3d具有position，属性是1个3维的向量
@@ -37,9 +34,10 @@ export camera
 
 ```
 
+renderer
+
 ```javascript
 import * as THREE from "three";
-import { CSS3DRenderer } from "three/examples/jsm/renderers/CSS3DRenderer.js";
 // 初始化渲染器
 const renderer = new THREE.WebGLRenderer({
   // 设置抗锯齿
@@ -57,81 +55,129 @@ renderer.toneMapping = THREE.ACESFilmicToneMapping;
 // 调节曝光
 renderer.toneMappingExposure = 0.8;
 
-// 创建css3drender
-const css3drender = new CSS3DRenderer();
-css3drender.setSize(window.innerWidth, window.innerHeight);
-document.querySelector(".cssrender").appendChild(css3drender.domElement);
-
-export default { renderer, css3drender };
+export default renderer;
 ```
+
+scene
 
 ```javascript
 import * as THREE from "three";
-import { RGBELoader } from "three/examples/jsm/loaders/RGBELoader.js";
 // 初始化场景
 const scene = new THREE.Scene();
-
-// 添加雾霾
-// const fog = new THREE.Fog(0x000000, 0, 10);
-// scene.fog = fog;
-
-// const cubeTextureLoader = new THREE.CubeTextureLoader().setPath("./textures/");
-// const texture = cubeTextureLoader.load([
-//   "1.jpg",
-//   "2.jpg",
-//   "3.jpg",
-//   "4.jpg",
-//   "5.jpg",
-//   "6.jpg",
-// ]);
-
-// 添加圆柱形天空
-const rgbeloader = new RGBELoader();
-
-rgbeloader.loadAsync("./textures/2k.hdr").then((texture) => {
-  // 设置纹理为圆柱形纹理
-  texture.mapping = THREE.EquirectangularReflectionMapping;
-  // 添加天空环境
-  scene.background = texture;
-  scene.environment = texture;
-});
-
-// 场景亮度物理灯光效果
-// 1设置色调映射
-// 2设置曝光
-// 3设置场景灯光
-
-// 给场景添加平行光
-const light = new THREE.DirectionalLight(0xffffff, 1);
-light.position.set(10, 100, 10);
-scene.add(light);
 
 export default scene;
 ```
 
+resezie
 ```javascript
-import cameraModule from "./camera";
-import rendererModule from "./renderer";
+import camera from "./camera";
+import renderer from "./renderer";
 
-// 更新摄像头
-cameraModule.activeCamera.aspect = window.innerWidth / window.innerHeight;
-//   更新摄像机的投影矩阵
-cameraModule.activeCamera.updateProjectionMatrix();
+// 监听屏幕大小改变的变化，设置渲染的尺寸
+window.addEventListener("resize", () => {
+  // 更新摄像头
+  camera.aspect = window.innerWidth / window.innerHeight;
+  //   更新摄像机的投影矩阵
+  camera.updateProjectionMatrix();
+
+  //   更新渲染器
+  renderer.setSize(window.innerWidth, window.innerHeight);
+  //   设置渲染器的像素比例
+  renderer.setPixelRatio(window.devicePixelRatio);
+});
+
+```
+
+控制器
+
+```javascript
+import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
+import { FlyControls } from "three/examples/jsm/controls/FlyControls";
+import { FirstPersonControls } from "three/examples/jsm/controls/FirstPersonControls";
+import renderer from "./renderer";
+import camera from "./camera";
+const orbitcontrols = new OrbitControls(camera, renderer.domElement);
+export const flyControls = new FlyControls(camera, renderer.domElement);
+export const firstPersonControls = new FirstPersonControls(camera, renderer.domElement);
+
+export default orbitcontrols;
+
+```
+
+vue页引入
+```javascript
+import camera from "./camera";
+import renderer from "./renderer";
 
 // 监听屏幕大小改变的变化，设置渲染的尺寸
 window.addEventListener("resize", () => {
   //   console.log("resize");
   // 更新摄像头
-  cameraModule.activeCamera.aspect = window.innerWidth / window.innerHeight;
+  camera.aspect = window.innerWidth / window.innerHeight;
   //   更新摄像机的投影矩阵
-  cameraModule.activeCamera.updateProjectionMatrix();
+  camera.updateProjectionMatrix();
 
   //   更新渲染器
-  rendererModule.renderer.setSize(window.innerWidth, window.innerHeight);
+  renderer.setSize(window.innerWidth, window.innerHeight);
   //   设置渲染器的像素比例
-  rendererModule.renderer.setPixelRatio(window.devicePixelRatio);
+  renderer.setPixelRatio(window.devicePixelRatio);
   // 更新cssrender
-  rendererModule.css3drender.setSize(window.innerWidth, window.innerHeight);
+  // css3drender.setSize(window.innerWidth, window.innerHeight);
 });
+```
 
+animate
+
+```javascript
+import renderer from "./renderer";
+import scene from "./scene";
+import camera from "./camera";
+export default function animate() {
+  requestAnimationFrame(animate);
+  renderer.render(scene, camera);
+}
+```
+
+object3D
+
+```javascript
+import * as THREE from "three";
+
+const boxGeometry = new THREE.BoxGeometry(1, 1, 1);
+const boxMaterial = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+const box = new THREE.Mesh(boxGeometry, boxMaterial);
+export { box };
+```
+
+```javascript
+<script setup>
+import { onMounted, ref } from "vue";
+import scene from "../three/scene";
+import camera from "../three/camera";
+import renderer from "../three/renderer";
+import "../three/resize";
+import { box } from "../three/mesh/box";
+import animate from "../three/animate";
+import orbitcontrols from "../three/controls";
+
+const canvasContainer = ref(null);
+scene.add(camera);
+scene.add(box);
+
+onMounted(() => {
+  canvasContainer.value.appendChild(renderer.domElement);
+  animate();
+});
+</script>
+
+<template>
+  <div ref="canvasContainer"></div>
+</template>
+
+<style scoped>
+.canvasContainer {
+  width: 100vw;
+  height: 100vh;
+}
+</style>
 ```
