@@ -37,6 +37,7 @@ export default {
           { text: "threejs环境搭建", link: "/articles/threejs-env" },
           { text: "通义灵码", link: "/articles/通义灵码使用" },
           { text: "blender快捷键", link: "/articles/blender快捷键" },
+          { text: "3D模型-光源-动画", link: "/articles/3D模型-光源-动画" },
         ],
       },
       {
