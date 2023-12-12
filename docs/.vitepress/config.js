@@ -35,7 +35,8 @@ export default {
           { text: "markdown语法", link: "/articles/mdsyntax" },
           { text: "gitpage", link: "/articles/gitpage" },
           { text: "threejs环境搭建", link: "/articles/threejs-env" },
-          { text: "通义灵码", link: "/articles/threejs-env" },
+          { text: "通义灵码", link: "/articles/通义灵码使用" },
+          { text: "blender快捷键", link: "/articles/blender快捷键" },
         ],
       },
       {
