@@ -2,7 +2,7 @@
 
 [项目一](https://jingjingshenye.github.io/electron-blog/)
 
-electron 音乐播放器
+<!-- electron 音乐播放器 -->
 
 <!-- [项目二](https://jingjingshenye.github.io/electron-blog/electron-music.html)
 

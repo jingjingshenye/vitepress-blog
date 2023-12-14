@@ -1,11 +1,9 @@
 <template>
   <div class="wrapper">
-    <div class="container" v-for="(item1, index) in websiteData" :key="index">
-      <!-- <h2 class="title">  {{ item1.title }}</h2> -->
       <div class="list">
         <div
           class="web"
-          v-for="(item2, index) in item1.list"
+          v-for="(item2, index) in websiteData.list"
           :key="index"
           @click="toWebsite(item2)"
         >
@@ -19,15 +17,14 @@
           </div>
         </div>
       </div>
-    </div>
   </div>
 </template>
 
 <script setup>
-defineProps({
+const props = defineProps({
   websiteData: {
-    type: Array,
-    default: () => websiteData,
+    type: Object,
+    default: () => {},
   },
 });
 
@@ -35,6 +32,8 @@ function toWebsite(item) {
   console.log(item);
   window.open(item.link);
 }
+
+console.log('websiteData', props);
 </script>
 
 <style scoped>
@@ -42,7 +41,7 @@ function toWebsite(item) {
   width: 800px;
   margin-top: 20px;
   display: flex;
-  gap: 20px;
+  gap: 35px;
   flex-wrap: wrap;
   justify-content: flex-start;
 }
