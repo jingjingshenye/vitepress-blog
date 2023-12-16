@@ -30,18 +30,6 @@ export default {
         ],
       },
       {
-        text: "article",
-        items: [
-          { text: "git", link: "/articles/git" },
-          { text: "markdown语法", link: "/articles/mdsyntax" },
-          { text: "gitpage", link: "/articles/gitpage" },
-          { text: "threejs环境搭建", link: "/articles/threejs-env" },
-          { text: "通义灵码", link: "/articles/通义灵码使用" },
-          { text: "blender快捷键", link: "/articles/blender快捷键" },
-          { text: "3D模型-光源-动画", link: "/articles/3D模型-光源-动画" },
-        ],
-      },
-      {
         text: "project",
         items: [
           {
@@ -82,6 +70,49 @@ export default {
           // },
         ],
       },
+      {
+        text: "article",
+        items: [
+          { text: "git", link: "/articles/git" },
+          { text: "markdown语法", link: "/articles/mdsyntax" },
+          { text: "gitpage", link: "/articles/gitpage" },
+          { text: "通义灵码", link: "/articles/通义灵码使用" },
+          {
+            text: 'threejs',
+            collapsible: true,
+            collapsed: false,
+            items: [
+              { text: "threejs环境搭建", link: "/articles/threejs/threejs-env" },
+              { text: "threejs", link: "/articles/threejs/threejs" },
+
+            ]
+          },
+          {
+            text: 'blender',
+            collapsible: true,
+            collapsed: false,
+            items: [
+              { text: "blender快捷键", link: "/articles/blender/blender快捷键" },
+              { text: "3D模型-光源-动画", link: "/articles/blender/3D模型-光源-动画" },
+              { text: "blender建模地形", link: "/articles/blender/blender建模地形" },
+            ]
+          },
+          {
+            text: 'css',
+            collapsible: true,
+            collapsed: true,
+            items: [
+              { text: 'css原子样式', link: "/articles/css/css原子样式" },
+              { text: 'css通用默认样式', link: "/articles/css/css通用默认样式" },
+              { text: 'postcss配置', link: "/articles/css/postcss配置" },
+              { text: 'scss', link: "/articles/css/scss" },
+              { text: 'tailwindcss', link: "/articles/css/tailwindcss" },
+              { text: '常用css', link: "/articles/css/常用css" },
+            ]
+          },
+        ],
+      },
+
     ],
     socialLinks: [
       { icon: 'github', link: 'https://github.com/' },

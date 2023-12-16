@@ -1,4 +1,4 @@
-# blender建模地形
+# blender 
 
 
 1. 物体模式，新建平面（shift + a）
