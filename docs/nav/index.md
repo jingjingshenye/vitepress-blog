@@ -1,10 +1,16 @@
-# 常用网站
+---
+layout: doc
+---
 
-<WebsiteList :websiteData="websiteDataList" :id="formatTitle" tabindex="-1" />
+# 导航
+
+<WebsiteList :websiteData="navData" />
+
+<!-- 参考：https://github.com/maomao1996/vitepress-nav-template -->
 
 <script setup>
 import WebsiteList from '../components/WebsiteList.vue'
 // import WebsiteListTwo from '../components/WebsiteListTwo.vue'
-import {websiteDataList} from "../common/website.js";
+import {websiteDataList, navData} from "../common/website.js";
 
 </script>
