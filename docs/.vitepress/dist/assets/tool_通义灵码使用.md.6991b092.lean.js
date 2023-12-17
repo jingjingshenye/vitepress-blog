@@ -1,0 +1,1 @@
+import{_ as t,o as e,c as a,Q as l}from"./chunks/framework.d7a29f29.js";const g=JSON.parse('{"title":"通义灵码使用指南","description":"","frontmatter":{},"headers":[],"relativePath":"tool/通义灵码使用.md","filePath":"tool/通义灵码使用.md"}'),r={name:"tool/通义灵码使用.md"},n=l("",13),d=[n];function i(o,c,s,h,_,x){return e(),a("div",null,d)}const y=t(r,[["render",i]]);export{g as __pageData,y as default};
