@@ -14,7 +14,7 @@ hero:
   actions:
     - theme: brand
       text: 开始
-      link: https://cn.vitejs.dev/guide/
+      link: /
     - theme: alt
       text: 导航
       link: /nav/index
