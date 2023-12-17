@@ -1,7 +1,8 @@
 <template>
+  
   <div class="wrapper">
     <div class="container" v-for="(item1, index) in websiteData" :key="index">
-      <!-- <h2 class="title">  {{ item1.title }}</h2> -->
+      <h2 class="title" >  {{ item1.title }}</h2>
       <div class="list">
         <div
           class="web"
@@ -24,6 +25,8 @@
 </template>
 
 <script setup>
+import { computed } from 'vue';
+import { slugify } from '@mdit-vue/shared'
 defineProps({
   websiteData: {
     type: Array,
