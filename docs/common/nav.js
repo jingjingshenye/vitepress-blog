@@ -1,9 +1,11 @@
+import sidebar from "./sidebar";
 export default [
   { text: "首页", link: "/" },
-  { text: "项目", link: "/project/threejs" },
-  { text: "笔记", link: "/notebooks/" },
-  { text: "技术", link: "/articles/typescript" },
-  { text: "工具", link: "/tool/git" },
+  { text: "导航", link: "/nav/" },
+  { text: "项目", items: sidebar["/project/"] },
+  { text: "编程", items: sidebar["/articles/"] },
+  { text: "笔记", items: sidebar["/notes/"] },
+  { text: "工具", items: sidebar["/tool/"] },
   {
     text: "常用链接",
     items: [

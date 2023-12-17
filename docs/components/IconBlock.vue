@@ -17,7 +17,6 @@
 </template>
 
 <script setup>
-
 defineProps({
   websiteData: {
     type: Array,

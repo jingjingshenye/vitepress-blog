@@ -1,7 +1,7 @@
 import nav from "../common/nav";
 import sidebar from "../common/sidebar";
 export default {
-  title: "my notebook",
+  title: "My PAGE",
   description: "",
   base: "/blog/",
   locales: {
@@ -9,8 +9,13 @@ export default {
       lang: "zh-CN",
     },
   },
+  head: [["link", { rel: "icon", href: "/favicon.ico" }]],
+  // markdown: {
+  //   lineNumbers: true,
+  // },
+
   themeConfig: {
-    logo: "",
+    logo: "/logo.jpg",
     aside: "true",
     nav,
     sidebar,
