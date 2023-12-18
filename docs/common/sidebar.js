@@ -77,7 +77,13 @@ export default {
       ],
     },
   ],
-  "/notes/": [{ text: "git", link: "/tool/git" }],
+  "/notes/": [
+    { text: "css生成器", link: "/notes/css生成器" },
+    { text: "图床", link: "/notes/图床" },
+    { text: "yarn", link: "/notes/yarn" },
+    { text: "常用正则", link: "/notes/常用正则" },
+    { text: "常用代码片段", link: "/notes/常用代码片段" },
+  ],
   "/tool/": [
     { text: "git", link: "/tool/git" },
     { text: "markdown语法", link: "/tool/mdsyntax" },
