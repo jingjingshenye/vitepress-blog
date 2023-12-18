@@ -29,6 +29,9 @@ export default {
   ],
   "/articles/": [
     { text: "typescript", link: "/articles/typescript" },
+    { text: "cli", link: "/articles/cli" },
+    { text: "package.json指南", link: "/articles/packagejson指南" },
+    { text: "commonjs与esmodule", link: "/articles/commonjs与esmodule" },
     {
       text: "threejs",
       collapsible: true,

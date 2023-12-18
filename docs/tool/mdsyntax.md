@@ -38,14 +38,15 @@ markdown [在线编辑器](https://markdown.com.cn/editor/)
 ```
 
 例如：
+
 > 子曰：岁寒，然后知松柏之后凋也
 
 ## 代码块
 
-```text
+````text
  反引号表示
  ```代码 ```
-```
+````
 
 ```javascript
 import * as THREE from "three";
@@ -78,7 +79,7 @@ document.body.appendChild(renderer.domElement);
 ```
 
 比如：
-![图片](../public/img/sky.jpg)
+![图片](/img/sky.jpg)
 
 ## 表格
 
@@ -93,12 +94,12 @@ document.body.appendChild(renderer.domElement);
 ```
 
 比如：
-| 表头1 | 表头2 | 表头3 |
+| 表头 1 | 表头 2 | 表头 3 |
 | :--: | :--: | :--: |
 
-| 表格内容1 | 表格内容2 | 表格内容3 |
-| :--: | :--: | :--: |
-| 表格内容4 | 表格内容5 | 表格内容6 |
+| 表格内容 1 | 表格内容 2 | 表格内容 3 |
+| :--------: | :--------: | :--------: |
+| 表格内容 4 | 表格内容 5 | 表格内容 6 |
 
 ## 粗体和斜体
 
@@ -109,7 +110,7 @@ document.body.appendChild(renderer.domElement);
 
 比如：
 **粗体**
-*斜体*
+_斜体_
 
 ## 表情
 
