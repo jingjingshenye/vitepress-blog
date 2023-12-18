@@ -83,5 +83,6 @@ export default {
     { text: "markdown语法", link: "/tool/mdsyntax" },
     { text: "gitpage", link: "/tool/gitpage" },
     { text: "通义灵码", link: "/tool/通义灵码使用" },
+    { text: "vscode", link: "/tool/vscode" },
   ],
 };
