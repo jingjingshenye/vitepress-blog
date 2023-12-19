@@ -40,7 +40,17 @@ git config --global https.proxy https://127.0.0.1:7890
 
 #只对Github代理
 git config --global http.https://github.com.proxy http://127.0.0.1:7890
-git config --global https.https://github.com.proxy https://127.0.0.1:7890
+git config --global http.https://github.com.proxy https://127.0.0.1:7890 # 错误写法
+
+# 格式
+# git config --global http.<url>.proxy <protocol>://<host>:<port>
+# git config --global https.<url>.proxy <protocol>://<host>:<port>
+
+#<url> 指的是你需要使用代理的远程仓库，该 <url> 支持 HTTP / HTTPS 传输协议的格式
+#<protocol> 指的是传输协议，支持 HTTP / HTTPS 传输协议的格式
+#<host> 指的是代理服务器的主机名或 IP 地址，如使用本地代理主机 127.0.0.1 或 localhost 等。
+#<port> 指的是代理服务器的端口号
+#常见误用：针对 HTTPS 传输协议（即 https:// 开头）的 <url> 代理，命令写成 “git config --global https.https://github.com.proxy protocol://127.0.0.1:7890” ，这一写法完全是错的。请记住：请记住: Git 代理配置项正确写法为 http.<url>.proxy，并不支持 https.<url>.proxy 这一错误写法。
 ```
 
 [参考](https://zhuanlan.zhihu.com/p/481574024)
