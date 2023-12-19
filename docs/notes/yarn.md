@@ -7,6 +7,7 @@ yarn // yarn install
 yarn add
 yarn install
 yarn config list
+yarn config set registry https://registry.npmmirror.com
 
 ```
 

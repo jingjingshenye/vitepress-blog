@@ -85,9 +85,9 @@ function toWebsite(item) {
   display: flex;
   justify-content: space-evenly;
   .img {
-    width: 50px;
+    // width: 50px;
     height: 50px;
-    object-fit: cover;
+    object-fit: contain;
     background-color: #f1f1f1;
     border-radius: 5px;
   }

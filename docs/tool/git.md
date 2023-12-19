@@ -22,14 +22,26 @@ git 超时需要魔法，设置
 
 ```shell
 git config --global http.proxy 127.0.0.1:7890
-
 git config --global https.proxy 127.0.0.1:7890
-
 # 取消
-
 git config --global --unset http.proxy
-
 git config --global --unset https.proxy
+
+
+# 全局设置，不推荐
+#使用http代理
+git config --global http.proxy http://127.0.0.1:58591
+git config --global https.proxy https://127.0.0.1:58591
+#使用socks5代理
+git config --global http.proxy socks5://127.0.0.1:51837
+git config --global https.proxy socks5://127.0.0.1:51837
+
+#只对Github代理
+#使用socks5代理（推荐）
+git config --global http.https://github.com.proxy socks5://127.0.0.1:51837
+#使用http代理（不推荐）
+git config --global http.https://github.com.proxy http://127.0.0.1:58591
+
 ```
 
 ## git 配置
