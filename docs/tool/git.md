@@ -39,9 +39,9 @@ git config --global https.proxy https://127.0.0.1:7890
 
 
 #只对Github代理
-git config --global http.https://github.com.proxy http://127.0.0.1:7890
-git config --global http.https://github.com.proxy https://127.0.0.1:7890 # 错误写法
+git config --global http.https://github.com.proxy https://127.0.0.1:7890 # 这个不可以推送
 
+git config --global http.https://github.com.proxy http://127.0.0.1:7890 # 这个可以推送
 # 格式
 # git config --global http.<url>.proxy <protocol>://<host>:<port>
 # git config --global https.<url>.proxy <protocol>://<host>:<port>

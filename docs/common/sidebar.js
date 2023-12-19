@@ -83,6 +83,7 @@ export default {
     { text: "yarn", link: "/notes/yarn" },
     { text: "常用正则", link: "/notes/常用正则" },
     { text: "常用代码片段", link: "/notes/常用代码片段" },
+    { text: "emmet", link: "/notes/emmet" },
   ],
   "/tool/": [
     { text: "git", link: "/tool/git" },

@@ -14,7 +14,7 @@ hero:
   actions:
     - theme: brand
       text: 开始
-      link: /
+      link: /nav/index
     - theme: alt
       text: 导航
       link: /nav/index
