@@ -39,9 +39,20 @@ git config --global https.proxy https://127.0.0.1:7890
 
 
 #只对Github代理
-git config --global http.https://github.com.proxy https://127.0.0.1:7890
+git config --global http.https://github.com.proxy http://127.0.0.1:7890
 git config --global https.https://github.com.proxy https://127.0.0.1:7890
 ```
+
+[参考](https://zhuanlan.zhihu.com/p/481574024)
+
+git 配置文件路径，以上修改内容都可以在配置文件里直接修改
+
+1. 全局配置 `~/.gitconfig`
+
+   windows 下在`C:\Users\用户名\.gitconfig`
+
+2. 仓库配置 `.git/config`
+3. 系统配置 `C:\Program Files\Git\etc\gitconfig`
 
 ## git 配置
 
