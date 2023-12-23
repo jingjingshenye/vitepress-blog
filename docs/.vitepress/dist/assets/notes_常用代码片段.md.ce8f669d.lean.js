@@ -1,0 +1,1 @@
+import{_ as s,o as n,c as a,Q as l}from"./chunks/framework.9f730de1.js";const A=JSON.parse('{"title":"常用代码","description":"","frontmatter":{},"headers":[],"relativePath":"notes/常用代码片段.md","filePath":"notes/常用代码片段.md"}'),p={name:"notes/常用代码片段.md"},o=l("",13),e=[o];function t(c,r,y,E,i,F){return n(),a("div",null,e)}const C=s(p,[["render",t]]);export{A as __pageData,C as default};

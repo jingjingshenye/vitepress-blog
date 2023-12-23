@@ -1,0 +1,1 @@
+import{_ as s,o as a,c as n,Q as p}from"./chunks/framework.9f730de1.js";const d=JSON.parse('{"title":"静态网站托管","description":"","frontmatter":{},"headers":[],"relativePath":"tool/gitpage.md","filePath":"tool/gitpage.md"}'),l={name:"tool/gitpage.md"},o=p("",37),e=[o];function t(c,i,r,g,h,y){return a(),n("div",null,e)}const u=s(l,[["render",t]]);export{d as __pageData,u as default};

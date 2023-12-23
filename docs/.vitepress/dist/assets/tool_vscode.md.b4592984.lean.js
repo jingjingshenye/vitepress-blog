@@ -1,0 +1,1 @@
+import{_ as t,o as e,c as l,Q as a}from"./chunks/framework.9f730de1.js";const u=JSON.parse('{"title":"vscode 相关","description":"","frontmatter":{},"headers":[],"relativePath":"tool/vscode.md","filePath":"tool/vscode.md"}'),s={name:"tool/vscode.md"},n=a("",19),o=[n];function r(c,d,i,p,y,h){return e(),l("div",null,o)}const x=t(s,[["render",r]]);export{u as __pageData,x as default};

@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as a}from"./chunks/framework.9f730de1.js";const _=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"articles/lib/dayjs.md","filePath":"articles/lib/dayjs.md"}'),s={name:"articles/lib/dayjs.md"};function r(c,o,i,n,d,l){return t(),a("div")}const m=e(s,[["render",r]]);export{_ as __pageData,m as default};

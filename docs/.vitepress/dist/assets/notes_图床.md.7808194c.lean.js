@@ -1,1 +1,0 @@
-import{_ as e,o as i,c as a,Q as l}from"./chunks/framework.d7a29f29.js";const g=JSON.parse('{"title":"图床","description":"","frontmatter":{},"headers":[],"relativePath":"notes/图床.md","filePath":"notes/图床.md"}'),t={name:"notes/图床.md"},o=l("",16),r=[o];function n(s,c,h,p,d,_){return i(),a("div",null,r)}const m=e(t,[["render",n]]);export{g as __pageData,m as default};
