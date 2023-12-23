@@ -26,12 +26,26 @@ export default {
       text: "lowcode",
       link: "/project/lowcode",
     },
+    {
+      text: "express",
+      link: "/project/express",
+    },
+    {
+      text: "nestjs",
+      link: "/project/nestjs",
+    },
+    {
+      text: "node全栈",
+      link: "/project/node全栈",
+    },
   ],
   "/articles/": [
     { text: "typescript", link: "/articles/typescript" },
     { text: "cli", link: "/articles/cli" },
     { text: "package.json指南", link: "/articles/packagejson指南" },
     { text: "commonjs与esmodule", link: "/articles/commonjs与esmodule" },
+    { text: "express", link: "/express" },
+    { text: "node", link: "/面试/node" },
     {
       text: "threejs",
       collapsible: true,
@@ -84,6 +98,8 @@ export default {
     { text: "常用正则", link: "/notes/常用正则" },
     { text: "常用代码片段", link: "/notes/常用代码片段" },
     { text: "emmet", link: "/notes/emmet" },
+    { text: "在线文档", link: "/notes/在线文件编辑" },
+    { text: "sass语法", link: "/notes/sass语法" },
   ],
   "/tool/": [
     { text: "git", link: "/tool/git" },
