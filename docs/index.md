@@ -24,9 +24,9 @@ features:
     details: 学习、整理、提高的好方式
     link: /articles/typescript
   - icon: ⚡️
-    title: 笔记本
+    title: 编程
     details: 快速查找记忆中的知识
-    link: /notes/index
+    link: /articles/css/scss
   - icon: 🛠️
     title: 工具
     details: 常用小工具整理
