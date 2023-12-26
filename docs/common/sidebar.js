@@ -1,3 +1,5 @@
+import project from "./sidebarData/project";
+import articles from "./sidebarData/articles";
 export default {
   "/home/": [
     {
@@ -5,107 +7,37 @@ export default {
       items: [{ text: "website", link: "/nav/website" }],
     },
   ],
-  "/project/": [
-    {
-      text: "threejs",
-      link: "/project/threejs",
-    },
-    {
-      text: "canvas",
-      link: "/project/canvas",
-    },
-    {
-      text: "electron",
-      link: "/project/electron",
-    },
-    {
-      text: "editor",
-      link: "/project/editor",
-    },
-    {
-      text: "lowcode",
-      link: "/project/lowcode",
-    },
-    {
-      text: "express",
-      link: "/project/express",
-    },
-    {
-      text: "nestjs",
-      link: "/project/nestjs",
-    },
-    {
-      text: "node全栈",
-      link: "/project/node全栈",
-    },
-  ],
-  "/articles/": [
-    { text: "typescript", link: "/articles/typescript" },
-    { text: "cli", link: "/articles/cli" },
-    { text: "package.json指南", link: "/articles/packagejson指南" },
-    { text: "commonjs与esmodule", link: "/articles/commonjs与esmodule" },
-    { text: "express", link: "/express" },
-    { text: "node", link: "/面试/node" },
-    {
-      text: "threejs",
-      collapsible: true,
-      collapsed: false,
-      items: [
-        { text: "threejs环境搭建", link: "/articles/threejs/threejs-env" },
-        { text: "threejs", link: "/articles/threejs/threejs" },
-      ],
-    },
-    {
-      text: "https",
-      collapsible: true,
-      collapsed: false,
-      items: [{ text: "axios", link: "/articles/https/axios" }],
-    },
-    {
-      text: "blender",
-      collapsible: true,
-      collapsed: false,
-      items: [
-        { text: "blender快捷键", link: "/articles/blender/blender快捷键" },
-        {
-          text: "3D模型-光源-动画",
-          link: "/articles/blender/3D模型-光源-动画",
-        },
-        {
-          text: "blender建模地形",
-          link: "/articles/blender/blender建模地形",
-        },
-      ],
-    },
-    {
-      text: "css",
-      collapsible: true,
-      collapsed: false,
-      items: [
-        { text: "css原子样式", link: "/articles/css/css原子样式" },
-        { text: "css通用默认样式", link: "/articles/css/css通用默认样式" },
-        { text: "postcss配置", link: "/articles/css/postcss配置" },
-        { text: "scss", link: "/articles/css/scss" },
-        { text: "tailwindcss", link: "/articles/css/tailwindcss" },
-        { text: "常用css", link: "/articles/css/常用css" },
-      ],
-    },
-  ],
-  "/notes/": [
-    { text: "css生成器", link: "/notes/css生成器" },
-    { text: "图床", link: "/notes/图床" },
-    { text: "yarn", link: "/notes/yarn" },
-    { text: "常用正则", link: "/notes/常用正则" },
-    { text: "常用代码片段", link: "/notes/常用代码片段" },
-    { text: "emmet", link: "/notes/emmet" },
-    { text: "在线文档", link: "/notes/在线文件编辑" },
-    { text: "sass语法", link: "/notes/sass语法" },
-  ],
+  "/project/": project,
+  "/articles/": articles,
   "/tool/": [
     { text: "git", link: "/tool/git" },
     { text: "markdown语法", link: "/tool/mdsyntax" },
     { text: "gitpage", link: "/tool/gitpage" },
     { text: "通义灵码", link: "/tool/通义灵码使用" },
     { text: "vscode", link: "/tool/vscode" },
+    { text: "图床", link: "/notes/图床" },
+  ],
+  "/3D/": [
+    {
+      text: "threejs",
+      items: [
+        { text: "threejs环境搭建", link: "/3D/threejs/threejs-env" },
+        { text: "threejs", link: "/3D/threejs/threejs" },
+      ],
+    },
+    {
+      text: "blender",
+      items: [
+        { text: "blender快捷键", link: "/3D/blender/blender快捷键" },
+        {
+          text: "3D模型-光源-动画",
+          link: "/3D/blender/3D模型-光源-动画",
+        },
+        {
+          text: "blender建模地形",
+          link: "/3D/blender/blender建模地形",
+        },
+      ],
+    },
   ],
 };

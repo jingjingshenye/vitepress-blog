@@ -4,7 +4,7 @@ export default [
   { text: "导航", link: "/nav/" },
   { text: "项目", items: sidebar["/project/"] },
   { text: "编程", items: sidebar["/articles/"] },
-  { text: "笔记本", items: sidebar["/notes/"] },
+  { text: "3D", items: sidebar["/3D/"] },
   { text: "工具", items: sidebar["/tool/"] },
   {
     text: "常用链接",
