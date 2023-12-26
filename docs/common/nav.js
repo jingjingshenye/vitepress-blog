@@ -3,7 +3,8 @@ export default [
   { text: "首页", link: "/" },
   { text: "导航", link: "/nav/" },
   { text: "项目", items: sidebar["/project/"] },
-  { text: "编程", items: sidebar["/articles/"] },
+  { text: "Linux", items: sidebar["/Linux/"] },
+  { text: "前端", items: sidebar["/articles/"] },
   { text: "3D", items: sidebar["/3D/"] },
   { text: "工具", items: sidebar["/tool/"] },
   {

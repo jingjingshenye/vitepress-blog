@@ -62,14 +62,6 @@ export default [
       { text: "常用代码片段", link: "/notes/常用代码片段" },
     ],
   },
-  {
-    text: "Linux",
-    items: [
-      { text: "服务器相关", link: "/articles/Linux/服务器相关" },
-      { text: "Nginx", link: "/articles/Linux/Nginx" },
-      { text: "PM2", link: "/articles/Linux/pm2" },
-    ],
-  },
 
   { text: "在线文档", link: "/notes/在线文件编辑" },
 ];

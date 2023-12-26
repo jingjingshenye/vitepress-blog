@@ -40,4 +40,14 @@ export default {
       ],
     },
   ],
+  "/Linux/": [
+    {
+      text: "Linux",
+      items: [
+        { text: "Linux常用命令", link: "/Linux/服务器相关" },
+        { text: "Nginx", link: "/Linux/Nginx" },
+        { text: "PM2", link: "/Linux/pm2" },
+      ],
+    },
+  ],
 };
