@@ -1,1 +1,0 @@
-import{_ as s,o as a,c as l,Q as p}from"./chunks/framework.9f730de1.js";const u=JSON.parse('{"title":"服务器相关","description":"","frontmatter":{},"headers":[],"relativePath":"Linux/服务器相关.md","filePath":"Linux/服务器相关.md"}'),e={name:"Linux/服务器相关.md"},o=p("",22),n=[o];function t(c,r,i,d,h,y){return a(),l("div",null,n)}const b=s(e,[["render",t]]);export{u as __pageData,b as default};

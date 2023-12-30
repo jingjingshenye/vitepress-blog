@@ -27,6 +27,22 @@ export default [
         text: "node全栈",
         link: "/articles/nodejs/node全栈",
       },
+      {
+        text: "socketIO",
+        link: "/articles/nodejs/socketIO",
+      },
+      {
+        text: "docker",
+        link: "/articles/docker",
+      },
+      {
+        text: "docker进入容器里的命令行",
+        link: "/articles/docker进入容器",
+      },
+      {
+        text: "webrtc",
+        link: "/articles/webrtc",
+      },
     ],
   },
   {
@@ -38,7 +54,14 @@ export default [
 
   {
     text: "网络",
-    items: [{ text: "axios", link: "/articles/https/axios" }],
+    items: [
+      { text: "axios", link: "/articles/https/axios" },
+      { text: "localhost和0.0.0.0的区别", link: "/articles/https/localhost" },
+      {
+        text: "vite项目的一些配置",
+        link: "/articles/https/vite项目一些配置",
+      },
+    ],
   },
 
   {
