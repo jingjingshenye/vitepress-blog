@@ -3,7 +3,7 @@ export default [
     text: "编程语言",
     items: [
       { text: "typescript", link: "/articles/typescript" },
-      { text: "emmet", link: "/notes/emmet" },
+      { text: "emmet", link: "/articles/emmet" },
     ],
   },
   {
@@ -11,7 +11,7 @@ export default [
     items: [
       { text: "cli", link: "/articles/cli" },
       { text: "package.json指南", link: "/articles/packagejson指南" },
-      { text: "yarn", link: "/notes/yarn" },
+      { text: "yarn", link: "/articles/yarn" },
     ],
   },
   {
@@ -73,18 +73,18 @@ export default [
       { text: "scss", link: "/articles/css/scss" },
       { text: "tailwindcss", link: "/articles/css/tailwindcss" },
       { text: "常用css", link: "/articles/css/常用css" },
-      { text: "css生成器", link: "/notes/css生成器" },
-      { text: "sass语法", link: "/notes/sass语法" },
+      { text: "css生成器", link: "/aritcles/css/css生成器" },
+      { text: "sass语法", link: "/aritcles/css/sass语法" },
     ],
   },
 
   {
     text: "常用代码片段",
     items: [
-      { text: "常用正则", link: "/notes/常用正则" },
-      { text: "常用代码片段", link: "/notes/常用代码片段" },
+      { text: "常用正则", link: "/articles/常用正则" },
+      { text: "常用代码片段", link: "/articles/常用代码片段" },
     ],
   },
 
-  { text: "在线文档", link: "/notes/在线文件编辑" },
+  { text: "在线文档", link: "/articles/在线文件编辑" },
 ];

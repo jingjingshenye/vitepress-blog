@@ -78,7 +78,7 @@ sudo service docker restart
 sudo service docker stop
 ```
 
-![Alt text](image.png)
+![Alt text](../public//docker.png)
 
 ## 本地部署
 

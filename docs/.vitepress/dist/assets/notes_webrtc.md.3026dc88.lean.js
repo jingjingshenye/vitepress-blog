@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as r}from"./chunks/framework.9f730de1.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"notes/webrtc.md","filePath":"notes/webrtc.md"}'),a={name:"notes/webrtc.md"};function o(c,s,n,p,_,d){return t(),r("div")}const f=e(a,[["render",o]]);export{m as __pageData,f as default};
