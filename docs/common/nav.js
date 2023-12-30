@@ -7,6 +7,7 @@ export default [
   { text: "前端", items: sidebar["/articles/"] },
   { text: "3D", items: sidebar["/3D/"] },
   { text: "工具", items: sidebar["/tool/"] },
+  { text: "笔记", items: sidebar["/notes/"] },
   {
     text: "常用链接",
     items: [

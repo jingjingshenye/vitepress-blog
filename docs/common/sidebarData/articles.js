@@ -73,8 +73,8 @@ export default [
       { text: "scss", link: "/articles/css/scss" },
       { text: "tailwindcss", link: "/articles/css/tailwindcss" },
       { text: "常用css", link: "/articles/css/常用css" },
-      { text: "css生成器", link: "/aritcles/css/css生成器" },
-      { text: "sass语法", link: "/aritcles/css/sass语法" },
+      { text: "css生成器", link: "/articles/css/css生成器" },
+      { text: "sass语法", link: "/articles/css/sass语法" },
     ],
   },
 

@@ -50,10 +50,8 @@ export default {
       ],
     },
   ],
-  "notes":[
-    {
-      { text: "webrtc", link: "/notes/webrtc" },
-      { text: "onlyoffice", link: "/notes/onlyoffice" },
-    }
-  ]
+  "/notes/": [
+    { text: "webrtc", link: "/notes/webrtc" },
+    { text: "onlyoffice", link: "/notes/onlyoffice" },
+  ],
 };
