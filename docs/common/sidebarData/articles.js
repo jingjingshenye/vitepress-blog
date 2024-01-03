@@ -28,6 +28,10 @@ export default [
         link: "/articles/nodejs/node全栈",
       },
       {
+        text: "mongoDB",
+        link: "/articles/nodejs/mongo",
+      },
+      {
         text: "socketIO",
         link: "/articles/nodejs/socketIO",
       },

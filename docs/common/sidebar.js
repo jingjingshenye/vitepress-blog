@@ -44,14 +44,17 @@ export default {
     {
       text: "Linux",
       items: [
-        { text: "Linux常用命令", link: "/Linux/服务器相关" },
+        { text: "服务器相关", link: "/Linux/服务器相关" },
         { text: "Nginx", link: "/Linux/Nginx" },
         { text: "PM2", link: "/Linux/pm2" },
+        { text: "Linux常用命令", link: "/Linux/常用命令" },
       ],
     },
   ],
   "/notes/": [
     { text: "webrtc", link: "/notes/webrtc" },
     { text: "onlyoffice", link: "/notes/onlyoffice" },
+    { text: "产品经理", link: "/notes/产品经理" },
+    { text: "http模块", link: "/notes/http模块" },
   ],
 };

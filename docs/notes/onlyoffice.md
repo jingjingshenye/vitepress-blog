@@ -81,3 +81,5 @@ export default defineComponent({
 开启 JWT 后，需要 token 验证，要请求自建的后端服务获取 token。
 
 这里建议 config 和 token 一起下发，后端配置更加灵活，不需要前端发版
+
+访问 docker 用主机 ip+映射接口，本地自建服务器也要用真实 ip
