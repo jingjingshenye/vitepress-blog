@@ -1,0 +1,1 @@
+import{_ as a,o as e,c as t,Q as o}from"./chunks/framework.9f730de1.js";const m=JSON.parse('{"title":"产品经理","description":"","frontmatter":{},"headers":[],"relativePath":"notes/产品经理.md","filePath":"notes/产品经理.md"}'),r={name:"notes/产品经理.md"},p=o("",20),n=[p];function s(i,h,_,c,l,d){return e(),t("div",null,n)}const f=a(r,[["render",s]]);export{m as __pageData,f as default};

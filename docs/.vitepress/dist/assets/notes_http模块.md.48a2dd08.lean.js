@@ -1,0 +1,1 @@
+import{_ as s,o as n,c as a,Q as p}from"./chunks/framework.9f730de1.js";const _=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"notes/http模块.md","filePath":"notes/http模块.md"}'),l={name:"notes/http模块.md"},o=p("",3),e=[o];function t(c,r,E,y,i,d){return n(),a("div",null,e)}const u=s(l,[["render",t]]);export{_ as __pageData,u as default};

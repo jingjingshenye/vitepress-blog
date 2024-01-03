@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>linux 常用命令 | My PAGE</title>
+    <meta name="description" content="A VitePress site">
+    <link rel="preload stylesheet" href="/blog/assets/style.28f083db.css" as="style">
+    
+    <script type="module" src="/blog/assets/app.d1aa4b98.js"></script>
+    <link rel="preload" href="/blog/assets/inter-roman-latin.2ed14f66.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="modulepreload" href="/blog/assets/chunks/framework.9f730de1.js">
+    <link rel="modulepreload" href="/blog/assets/chunks/theme.f0c38742.js">
+    <link rel="modulepreload" href="/blog/assets/Linux_常用命令.md.7f202295.lean.js">
+    <link rel="icon" href="/favicon.ico">
+    <script id="check-dark-mode">(()=>{const e=localStorage.getItem("vitepress-theme-appearance")||"auto",a=window.matchMedia("(prefers-color-scheme: dark)").matches;(!e||e==="auto"?a:e==="dark")&&document.documentElement.classList.add("dark")})();</script>
+    <script id="check-mac-os">document.documentElement.classList.toggle("mac",/Mac|iPhone|iPod|iPad/i.test(navigator.platform));</script>
+  </head>
+  <body>
+    <div id="app"><div class="Layout" data-v-d633d523 data-v-5a346dfe><!--[--><!--]--><!--[--><span tabindex="-1" data-v-0f60ec36></span><a href="#VPContent" class="VPSkipLink visually-hidden" data-v-0f60ec36> Skip to content </a><!--]--><!----><header class="VPNav" data-v-5a346dfe data-v-ae24b3ad><div class="VPNavBar has-sidebar" data-v-ae24b3ad data-v-a0fd61f4><div class="container" data-v-a0fd61f4><div class="title" data-v-a0fd61f4><div class="VPNavBarTitle has-sidebar" data-v-a0fd61f4 data-v-86d1bed8><a class="title" href="/blog/" data-v-86d1bed8><!--[--><!--]--><!--[--><img class="VPImage logo" src="/blog/logo.jpg" alt data-v-8426fc1a><!--]--><!--[-->My PAGE<!--]--><!--[--><!--]--></a></div></div><div class="content" data-v-a0fd61f4><div class="curtain" data-v-a0fd61f4></div><div class="content-body" data-v-a0fd61f4><!--[--><!--]--><div class="VPNavBarSearch search" data-v-a0fd61f4><!----></div><nav aria-labelledby="main-nav-aria-label" class="VPNavBarMenu menu" data-v-a0fd61f4 data-v-7f418b0f><span id="main-nav-aria-label" class="visually-hidden" data-v-7f418b0f>Main Navigation</span><!--[--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/blog/" tabindex="0" data-v-7f418b0f data-v-42ef59de><!--[--><span data-v-42ef59de>首页</span><!--]--></a><!--]--><!--[--><a class="VPLink link VPNavBarMenuLink" href="/blog/nav/" tabindex="0" data-v-7f418b0f data-v-42ef59de><!--[--><span data-v-42ef59de>导航</span><!--]--></a><!--]--><!--[--><div class="VPFlyout VPNavBarMenuGroup" data-v-7f418b0f data-v-9c007e85><button type="button" class="button" aria-haspopup="true" aria-expanded="false" data-v-9c007e85><span class="text" data-v-9c007e85><!----><span data-v-9c007e85>项目</span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" viewbox="0 0 24 24" class="text-icon" data-v-9c007e85><path d="M12,16c-0.3,0-0.5-0.1-0.7-0.3l-6-6c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l5.3,5.3l5.3-5.3c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-6,6C12.5,15.9,12.3,16,12,16z"></path></svg></span></button><div class="menu" data-v-9c007e85><div class="VPMenu" data-v-9c007e85 data-v-e7ea1737><div class="items" data-v-e7ea1737><!--[--><!--[--><div class="VPMenuLink" data-v-e7ea1737 data-v-43f1e123><a class="VPLink link" href="/blog/project/threejs.html" data-v-43f1e123><!--[-->threejs<!--]--></a></div><!--]--><!--[--><div class="VPMenuLink" data-v-e7ea1737 data-v-43f1e123><a class="VPLink link" href="/blog/project/canvas.html" data-v-43f1e123><!--[-->canvas<!--]--></a></div><!--]--><!--[--><div class="VPMenuLink" data-v-e7ea1737 data-v-43f1e123><a class="VPLink link" href="/blog/project/electron.html" data-v-43f1e123><!--[-->electron<!--]--></a></div><!--]--><!--[--><div class="VPMenuLink" data-v-e7ea1737 data-v-43f1e123><a class="VPLink link" href="/blog/project/editor.html" data-v-43f1e123><!--[-->editor<!--]--></a></div><!--]--><!--[--><div class="VPMenuLink" data-v-e7ea1737 data-v-43f1e123><a class="VPLink link" href="/blog/project/lowcode.html" data-v-43f1e123><!--[-->lowcode<!--]--></a></div><!--]--><!--]--></div><!--[--><!--]--></div></div></div><!--]--><!--[--><div class="VPFlyout VPNavBarMenuGroup active" data-v-7f418b0f data-v-9c007e85><button type="button" class="button" aria-haspopup="true" aria-expanded="false" data-v-9c007e85><span class="text" data-v-9c007e85><!----><span data-v-9c007e85>Linux</span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" viewbox="0 0 24 24" class="text-icon" data-v-9c007e85><path d="M12,16c-0.3,0-0.5-0.1-0.7-0.3l-6-6c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l5.3,5.3l5.3-5.3c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-6,6C12.5,15.9,12.3,16,12,16z"></path></svg></span></button><div class="menu" data-v-9c007e85><div class="VPMenu" data-v-9c007e85 data-v-e7ea1737><div class="items" data-v-e7ea1737><!--[--><!--[--><div class="VPMenuGroup" data-v-e7ea1737 data-v-69e747b5><p class="title" data-v-69e747b5>Linux</p><!--[--><!--[--><div class="VPMenuLink" data-v-69e747b5 data-v-43f1e123><a class="VPLink link" href="/blog/Linux/%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9B%B8%E5%85%B3.html" data-v-43f1e123><!--[-->服务器相关<!--]--></a></div><!--]--><!--[--><div class="VPMenuLink" data-v-69e747b5 data-v-43f1e123><a class="VPLink link" href="/blog/Linux/Nginx.html" data-v-43f1e123><!--[-->Nginx<!--]--></a></div><!--]--><!--[--><div class="VPMenuLink" data-v-69e747b5 data-v-43f1e123><a class="VPLink link" href="/blog/Linux/pm2.html" data-v-43f1e123><!--[-->PM2<!--]--></a></div><!--]--><!--[--><div class="VPMenuLink" data-v-69e747b5 data-v-43f1e123><a class="VPLink link active" href="/blog/Linux/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.html" data-v-43f1e123><!--[-->Linux常用命令<!--]--></a></div><!--]--><!--]--></div><!--]--><!--]--></div><!--[--><!--]--></div></div></div><!--]--><!--[--><div class="VPFlyout VPNavBarMenuGroup" data-v-7f418b0f data-v-9c007e85><button type="button" class="button" aria-haspopup="true" aria-expanded="false" data-v-9c007e85><span class="text" data-v-9c007e85><!----><span data-v-9c007e85>前端</span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" viewbox="0 0 24 24" class="text-icon" data-v-9c007e85><path d="M12,16c-0.3,0-0.5-0.1-0.7-0.3l-6-6c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l5.3,5.3l5.3-5.3c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-6,6C12.5,15.9,12.3,16,12,16z"></path></svg></span></button><div class="menu" data-v-9c007e85><div class="VPMenu" data-v-9c007e85 data-v-e7ea1737><div class="items" data-v-e7ea1737><!--[--><!--[--><div class="VPMenuGroup" data-v-e7ea1737 data-v-69e747b5><p class="title" data-v-69e747b5>编程语言</p><!--[--><!--[--><div class="VPMenuLink" data-v-69e747b5 data-v-43f1e123><a class="VPLink link" href="/blog/articles/typescript.html" data-v-43f1e123><!--[-->typescript<!--]--></a></div><!--]--><!--[--><div class="VPMenuLink" data-v-69e747b5 data-v-43f1e123><a class="VPLink link" href="/blog/articles/emmet.html" data-v-43f1e123><!--[-->emmet<!--]--></a></div><!--]--><!--]--></div><!--]--><!--[--><div class="VPMenuGroup" data-v-e7ea1737 data-v-69e747b5><p class="title" data-v-69e747b5>工程化</p><!--[--><!--[--><div class="VPMenuLink" data-v-69e747b5 data-v-43f1e123><a class="VPLink link" href="/blog/articles/cli.html" data-v-43f1e123><!--[-->cli<!--]--></a></div><!--]--><!--[--><div class="VPMenuLink" data-v-69e747b5 data-v-43f1e123><a class="VPLink link" href="/blog/articles/packagejson%E6%8C%87%E5%8D%97.html" data-v-43f1e123><!--[-->package.json指南<!--]--></a></div><!--]--><!--[--><div class="VPMenuLink" data-v-69e747b5 data-v-43f1e123><a class="VPLink link" href="/blog/articles/yarn.html" data-v-43f1e123><!--[-->yarn<!--]--></a></div><!--]--><!--]--></div><!--]--><!--[--><div class="VPMenuGroup" data-v-e7ea1737 data-v-69e747b5><p class="title" data-v-69e747b5>Node.js</p><!--[--><!--[--><div class="VPMenuLink" data-v-69e747b5 data-v-43f1e123><a class="VPLink link" href="/blog/articles/nodejs/node.html" data-v-43f1e123><!--[-->node<!--]--></a></div><!--]--><!--[--><div class="VPMenuLink" data-v-69e747b5 data-v-43f1e123><a class="VPLink link" href="/blog/articles/nodejs/express.html" data-v-43f1e123><!--[-->express<!--]--></a></div><!--]--><!--[--><div class="VPMenuLink" data-v-69e747b5 data-v-43f1e123><a class="VPLink link" href="/blog/articles/nodejs/nest.html" data-v-43f1e123><!--[-->nestjs<!--]--></a></div><!--]--><!--[--><div class="VPMenuLink" data-v-69e747b5 data-v-43f1e123><a class="VPLink link" href="/blog/articles/nodejs/node%E5%85%A8%E6%A0%88.html" data-v-43f1e123><!--[-->node全栈<!--]--></a></div><!--]--><!--[--><div class="VPMenuLink" data-v-69e747b5 data-v-43f1e123><a class="VPLink link" href="/blog/articles/nodejs/mongo.html" data-v-43f1e123><!--[-->mongoDB<!--]--></a></div><!--]--><!--[--><div class="VPMenuLink" data-v-69e747b5 data-v-43f1e123><a class="VPLink link" href="/blog/articles/nodejs/socketIO.html" data-v-43f1e123><!--[-->socketIO<!--]--></a></div><!--]--><!--[--><div class="VPMenuLink" data-v-69e747b5 data-v-43f1e123><a class="VPLink link" href="/blog/articles/docker.html" data-v-43f1e123><!--[-->docker<!--]--></a></div><!--]--><!--[--><div class="VPMenuLink" data-v-69e747b5 data-v-43f1e123><a class="VPLink link" href="/blog/articles/docker%E8%BF%9B%E5%85%A5%E5%AE%B9%E5%99%A8.html" data-v-43f1e123><!--[-->docker进入容器里的命令行<!--]--></a></div><!--]--><!--[--><div class="VPMenuLink" data-v-69e747b5 data-v-43f1e123><a class="VPLink link" href="/blog/articles/webrtc.html" data-v-43f1e123><!--[-->webrtc<!--]--></a></div><!--]--><!--]--></div><!--]--><!--[--><div class="VPMenuGroup" data-v-e7ea1737 data-v-69e747b5><p class="title" data-v-69e747b5>模块化</p><!--[--><!--[--><div class="VPMenuLink" data-v-69e747b5 data-v-43f1e123><a class="VPLink link" href="/blog/articles/commonjs%E4%B8%8Eesmodule.html" data-v-43f1e123><!--[-->commonjs与esmodule<!--]--></a></div><!--]--><!--]--></div><!--]--><!--[--><div class="VPMenuGroup" data-v-e7ea1737 data-v-69e747b5><p class="title" data-v-69e747b5>网络</p><!--[--><!--[--><div class="VPMenuLink" data-v-69e747b5 data-v-43f1e123><a class="VPLink link" href="/blog/articles/https/axios.html" data-v-43f1e123><!--[-->axios<!--]--></a></div><!--]--><!--[--><div class="VPMenuLink" data-v-69e747b5 data-v-43f1e123><a class="VPLink link" href="/blog/articles/https/localhost.html" data-v-43f1e123><!--[-->localhost和0.0.0.0的区别<!--]--></a></div><!--]--><!--[--><div class="VPMenuLink" data-v-69e747b5 data-v-43f1e123><a class="VPLink link" href="/blog/articles/https/vite%E9%A1%B9%E7%9B%AE%E4%B8%80%E4%BA%9B%E9%85%8D%E7%BD%AE.html" data-v-43f1e123><!--[-->vite项目的一些配置<!--]--></a></div><!--]--><!--]--></div><!--]--><!--[--><div class="VPMenuGroup" data-v-e7ea1737 data-v-69e747b5><p class="title" data-v-69e747b5>CSS</p><!--[--><!--[--><div class="VPMenuLink" data-v-69e747b5 data-v-43f1e123><a class="VPLink link" href="/blog/articles/css/css%E5%8E%9F%E5%AD%90%E6%A0%B7%E5%BC%8F.html" data-v-43f1e123><!--[-->css原子样式<!--]--></a></div><!--]--><!--[--><div class="VPMenuLink" data-v-69e747b5 data-v-43f1e123><a class="VPLink link" href="/blog/articles/css/css%E9%80%9A%E7%94%A8%E9%BB%98%E8%AE%A4%E6%A0%B7%E5%BC%8F.html" data-v-43f1e123><!--[-->css通用默认样式<!--]--></a></div><!--]--><!--[--><div class="VPMenuLink" data-v-69e747b5 data-v-43f1e123><a class="VPLink link" href="/blog/articles/css/postcss%E9%85%8D%E7%BD%AE.html" data-v-43f1e123><!--[-->postcss配置<!--]--></a></div><!--]--><!--[--><div class="VPMenuLink" data-v-69e747b5 data-v-43f1e123><a class="VPLink link" href="/blog/articles/css/scss.html" data-v-43f1e123><!--[-->scss<!--]--></a></div><!--]--><!--[--><div class="VPMenuLink" data-v-69e747b5 data-v-43f1e123><a class="VPLink link" href="/blog/articles/css/tailwindcss.html" data-v-43f1e123><!--[-->tailwindcss<!--]--></a></div><!--]--><!--[--><div class="VPMenuLink" data-v-69e747b5 data-v-43f1e123><a class="VPLink link" href="/blog/articles/css/%E5%B8%B8%E7%94%A8css.html" data-v-43f1e123><!--[-->常用css<!--]--></a></div><!--]--><!--[--><div class="VPMenuLink" data-v-69e747b5 data-v-43f1e123><a class="VPLink link" href="/blog/articles/css/css%E7%94%9F%E6%88%90%E5%99%A8.html" data-v-43f1e123><!--[-->css生成器<!--]--></a></div><!--]--><!--[--><div class="VPMenuLink" data-v-69e747b5 data-v-43f1e123><a class="VPLink link" href="/blog/articles/css/sass%E8%AF%AD%E6%B3%95.html" data-v-43f1e123><!--[-->sass语法<!--]--></a></div><!--]--><!--]--></div><!--]--><!--[--><div class="VPMenuGroup" data-v-e7ea1737 data-v-69e747b5><p class="title" data-v-69e747b5>常用代码片段</p><!--[--><!--[--><div class="VPMenuLink" data-v-69e747b5 data-v-43f1e123><a class="VPLink link" href="/blog/articles/%E5%B8%B8%E7%94%A8%E6%AD%A3%E5%88%99.html" data-v-43f1e123><!--[-->常用正则<!--]--></a></div><!--]--><!--[--><div class="VPMenuLink" data-v-69e747b5 data-v-43f1e123><a class="VPLink link" href="/blog/articles/%E5%B8%B8%E7%94%A8%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5.html" data-v-43f1e123><!--[-->常用代码片段<!--]--></a></div><!--]--><!--]--></div><!--]--><!--[--><div class="VPMenuLink" data-v-e7ea1737 data-v-43f1e123><a class="VPLink link" href="/blog/articles/%E5%9C%A8%E7%BA%BF%E6%96%87%E4%BB%B6%E7%BC%96%E8%BE%91.html" data-v-43f1e123><!--[-->在线文档<!--]--></a></div><!--]--><!--]--></div><!--[--><!--]--></div></div></div><!--]--><!--[--><div class="VPFlyout VPNavBarMenuGroup" data-v-7f418b0f data-v-9c007e85><button type="button" class="button" aria-haspopup="true" aria-expanded="false" data-v-9c007e85><span class="text" data-v-9c007e85><!----><span data-v-9c007e85>3D</span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" viewbox="0 0 24 24" class="text-icon" data-v-9c007e85><path d="M12,16c-0.3,0-0.5-0.1-0.7-0.3l-6-6c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l5.3,5.3l5.3-5.3c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-6,6C12.5,15.9,12.3,16,12,16z"></path></svg></span></button><div class="menu" data-v-9c007e85><div class="VPMenu" data-v-9c007e85 data-v-e7ea1737><div class="items" data-v-e7ea1737><!--[--><!--[--><div class="VPMenuGroup" data-v-e7ea1737 data-v-69e747b5><p class="title" data-v-69e747b5>threejs</p><!--[--><!--[--><div class="VPMenuLink" data-v-69e747b5 data-v-43f1e123><a class="VPLink link" href="/blog/3D/threejs/threejs-env.html" data-v-43f1e123><!--[-->threejs环境搭建<!--]--></a></div><!--]--><!--[--><div class="VPMenuLink" data-v-69e747b5 data-v-43f1e123><a class="VPLink link" href="/blog/3D/threejs/threejs.html" data-v-43f1e123><!--[-->threejs<!--]--></a></div><!--]--><!--]--></div><!--]--><!--[--><div class="VPMenuGroup" data-v-e7ea1737 data-v-69e747b5><p class="title" data-v-69e747b5>blender</p><!--[--><!--[--><div class="VPMenuLink" data-v-69e747b5 data-v-43f1e123><a class="VPLink link" href="/blog/3D/blender/blender%E5%BF%AB%E6%8D%B7%E9%94%AE.html" data-v-43f1e123><!--[-->blender快捷键<!--]--></a></div><!--]--><!--[--><div class="VPMenuLink" data-v-69e747b5 data-v-43f1e123><a class="VPLink link" href="/blog/3D/blender/3D%E6%A8%A1%E5%9E%8B-%E5%85%89%E6%BA%90-%E5%8A%A8%E7%94%BB.html" data-v-43f1e123><!--[-->3D模型-光源-动画<!--]--></a></div><!--]--><!--[--><div class="VPMenuLink" data-v-69e747b5 data-v-43f1e123><a class="VPLink link" href="/blog/3D/blender/blender%E5%BB%BA%E6%A8%A1%E5%9C%B0%E5%BD%A2.html" data-v-43f1e123><!--[-->blender建模地形<!--]--></a></div><!--]--><!--]--></div><!--]--><!--]--></div><!--[--><!--]--></div></div></div><!--]--><!--[--><div class="VPFlyout VPNavBarMenuGroup" data-v-7f418b0f data-v-9c007e85><button type="button" class="button" aria-haspopup="true" aria-expanded="false" data-v-9c007e85><span class="text" data-v-9c007e85><!----><span data-v-9c007e85>工具</span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" viewbox="0 0 24 24" class="text-icon" data-v-9c007e85><path d="M12,16c-0.3,0-0.5-0.1-0.7-0.3l-6-6c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l5.3,5.3l5.3-5.3c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-6,6C12.5,15.9,12.3,16,12,16z"></path></svg></span></button><div class="menu" data-v-9c007e85><div class="VPMenu" data-v-9c007e85 data-v-e7ea1737><div class="items" data-v-e7ea1737><!--[--><!--[--><div class="VPMenuLink" data-v-e7ea1737 data-v-43f1e123><a class="VPLink link" href="/blog/tool/git.html" data-v-43f1e123><!--[-->git<!--]--></a></div><!--]--><!--[--><div class="VPMenuLink" data-v-e7ea1737 data-v-43f1e123><a class="VPLink link" href="/blog/tool/mdsyntax.html" data-v-43f1e123><!--[-->markdown语法<!--]--></a></div><!--]--><!--[--><div class="VPMenuLink" data-v-e7ea1737 data-v-43f1e123><a class="VPLink link" href="/blog/tool/gitpage.html" data-v-43f1e123><!--[-->gitpage<!--]--></a></div><!--]--><!--[--><div class="VPMenuLink" data-v-e7ea1737 data-v-43f1e123><a class="VPLink link" href="/blog/tool/%E9%80%9A%E4%B9%89%E7%81%B5%E7%A0%81%E4%BD%BF%E7%94%A8.html" data-v-43f1e123><!--[-->通义灵码<!--]--></a></div><!--]--><!--[--><div class="VPMenuLink" data-v-e7ea1737 data-v-43f1e123><a class="VPLink link" href="/blog/tool/vscode.html" data-v-43f1e123><!--[-->vscode<!--]--></a></div><!--]--><!--[--><div class="VPMenuLink" data-v-e7ea1737 data-v-43f1e123><a class="VPLink link" href="/blog/notes/%E5%9B%BE%E5%BA%8A.html" data-v-43f1e123><!--[-->图床<!--]--></a></div><!--]--><!--]--></div><!--[--><!--]--></div></div></div><!--]--><!--[--><div class="VPFlyout VPNavBarMenuGroup" data-v-7f418b0f data-v-9c007e85><button type="button" class="button" aria-haspopup="true" aria-expanded="false" data-v-9c007e85><span class="text" data-v-9c007e85><!----><span data-v-9c007e85>笔记</span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" viewbox="0 0 24 24" class="text-icon" data-v-9c007e85><path d="M12,16c-0.3,0-0.5-0.1-0.7-0.3l-6-6c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l5.3,5.3l5.3-5.3c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-6,6C12.5,15.9,12.3,16,12,16z"></path></svg></span></button><div class="menu" data-v-9c007e85><div class="VPMenu" data-v-9c007e85 data-v-e7ea1737><div class="items" data-v-e7ea1737><!--[--><!--[--><div class="VPMenuLink" data-v-e7ea1737 data-v-43f1e123><a class="VPLink link" href="/blog/notes/webrtc.html" data-v-43f1e123><!--[-->webrtc<!--]--></a></div><!--]--><!--[--><div class="VPMenuLink" data-v-e7ea1737 data-v-43f1e123><a class="VPLink link" href="/blog/notes/onlyoffice.html" data-v-43f1e123><!--[-->onlyoffice<!--]--></a></div><!--]--><!--[--><div class="VPMenuLink" data-v-e7ea1737 data-v-43f1e123><a class="VPLink link" href="/blog/notes/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86.html" data-v-43f1e123><!--[-->产品经理<!--]--></a></div><!--]--><!--[--><div class="VPMenuLink" data-v-e7ea1737 data-v-43f1e123><a class="VPLink link" href="/blog/notes/http%E6%A8%A1%E5%9D%97.html" data-v-43f1e123><!--[-->http模块<!--]--></a></div><!--]--><!--]--></div><!--[--><!--]--></div></div></div><!--]--><!--[--><div class="VPFlyout VPNavBarMenuGroup" data-v-7f418b0f data-v-9c007e85><button type="button" class="button" aria-haspopup="true" aria-expanded="false" data-v-9c007e85><span class="text" data-v-9c007e85><!----><span data-v-9c007e85>常用链接</span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" viewbox="0 0 24 24" class="text-icon" data-v-9c007e85><path d="M12,16c-0.3,0-0.5-0.1-0.7-0.3l-6-6c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l5.3,5.3l5.3-5.3c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-6,6C12.5,15.9,12.3,16,12,16z"></path></svg></span></button><div class="menu" data-v-9c007e85><div class="VPMenu" data-v-9c007e85 data-v-e7ea1737><div class="items" data-v-e7ea1737><!--[--><!--[--><div class="VPMenuLink" data-v-e7ea1737 data-v-43f1e123><a class="VPLink link vp-external-link-icon" href="https://juejin.cn/user/726107228492253" target="_blank" rel="noreferrer" data-v-43f1e123><!--[-->掘金<!--]--></a></div><!--]--><!--[--><div class="VPMenuLink" data-v-e7ea1737 data-v-43f1e123><a class="VPLink link vp-external-link-icon" href="https://github.com/coding-lin" target="_blank" rel="noreferrer" data-v-43f1e123><!--[-->Github<!--]--></a></div><!--]--><!--]--></div><!--[--><!--]--></div></div></div><!--]--><!--]--></nav><!----><div class="VPNavBarAppearance appearance" data-v-a0fd61f4 data-v-e6aabb21><button class="VPSwitch VPSwitchAppearance" type="button" role="switch" title="toggle dark mode" aria-checked="false" data-v-e6aabb21 data-v-ce54a7d1 data-v-b1685198><span class="check" data-v-b1685198><span class="icon" data-v-b1685198><!--[--><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" viewbox="0 0 24 24" class="sun" data-v-ce54a7d1><path d="M12,18c-3.3,0-6-2.7-6-6s2.7-6,6-6s6,2.7,6,6S15.3,18,12,18zM12,8c-2.2,0-4,1.8-4,4c0,2.2,1.8,4,4,4c2.2,0,4-1.8,4-4C16,9.8,14.2,8,12,8z"></path><path d="M12,4c-0.6,0-1-0.4-1-1V1c0-0.6,0.4-1,1-1s1,0.4,1,1v2C13,3.6,12.6,4,12,4z"></path><path d="M12,24c-0.6,0-1-0.4-1-1v-2c0-0.6,0.4-1,1-1s1,0.4,1,1v2C13,23.6,12.6,24,12,24z"></path><path d="M5.6,6.6c-0.3,0-0.5-0.1-0.7-0.3L3.5,4.9c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l1.4,1.4c0.4,0.4,0.4,1,0,1.4C6.2,6.5,5.9,6.6,5.6,6.6z"></path><path d="M19.8,20.8c-0.3,0-0.5-0.1-0.7-0.3l-1.4-1.4c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l1.4,1.4c0.4,0.4,0.4,1,0,1.4C20.3,20.7,20,20.8,19.8,20.8z"></path><path d="M3,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h2c0.6,0,1,0.4,1,1S3.6,13,3,13z"></path><path d="M23,13h-2c-0.6,0-1-0.4-1-1s0.4-1,1-1h2c0.6,0,1,0.4,1,1S23.6,13,23,13z"></path><path d="M4.2,20.8c-0.3,0-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4l1.4-1.4c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-1.4,1.4C4.7,20.7,4.5,20.8,4.2,20.8z"></path><path d="M18.4,6.6c-0.3,0-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4l1.4-1.4c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-1.4,1.4C18.9,6.5,18.6,6.6,18.4,6.6z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" viewbox="0 0 24 24" class="moon" data-v-ce54a7d1><path d="M12.1,22c-0.3,0-0.6,0-0.9,0c-5.5-0.5-9.5-5.4-9-10.9c0.4-4.8,4.2-8.6,9-9c0.4,0,0.8,0.2,1,0.5c0.2,0.3,0.2,0.8-0.1,1.1c-2,2.7-1.4,6.4,1.3,8.4c2.1,1.6,5,1.6,7.1,0c0.3-0.2,0.7-0.3,1.1-0.1c0.3,0.2,0.5,0.6,0.5,1c-0.2,2.7-1.5,5.1-3.6,6.8C16.6,21.2,14.4,22,12.1,22zM9.3,4.4c-2.9,1-5,3.6-5.2,6.8c-0.4,4.4,2.8,8.3,7.2,8.7c2.1,0.2,4.2-0.4,5.8-1.8c1.1-0.9,1.9-2.1,2.4-3.4c-2.5,0.9-5.3,0.5-7.5-1.1C9.2,11.4,8.1,7.7,9.3,4.4z"></path></svg><!--]--></span></span></button></div><div class="VPSocialLinks VPNavBarSocialLinks social-links" data-v-a0fd61f4 data-v-0394ad82 data-v-7bc22406><!--[--><a class="VPSocialLink no-icon" href="https://github.com/" aria-label="github" target="_blank" rel="noopener" data-v-7bc22406 data-v-f80f8133><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a><a class="VPSocialLink no-icon" href="http://www.w3.org/" aria-label target="_blank" rel="noopener" data-v-7bc22406 data-v-f80f8133><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Dribbble</title><path d="M12...6.38z"/></svg></a><!--]--></div><div class="VPFlyout VPNavBarExtra extra" data-v-a0fd61f4 data-v-d0bd9dde data-v-9c007e85><button type="button" class="button" aria-haspopup="true" aria-expanded="false" aria-label="extra navigation" data-v-9c007e85><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" viewbox="0 0 24 24" class="icon" data-v-9c007e85><circle cx="12" cy="12" r="2"></circle><circle cx="19" cy="12" r="2"></circle><circle cx="5" cy="12" r="2"></circle></svg></button><div class="menu" data-v-9c007e85><div class="VPMenu" data-v-9c007e85 data-v-e7ea1737><!----><!--[--><!--[--><!----><div class="group" data-v-d0bd9dde><div class="item appearance" data-v-d0bd9dde><p class="label" data-v-d0bd9dde>Appearance</p><div class="appearance-action" data-v-d0bd9dde><button class="VPSwitch VPSwitchAppearance" type="button" role="switch" title="toggle dark mode" aria-checked="false" data-v-d0bd9dde data-v-ce54a7d1 data-v-b1685198><span class="check" data-v-b1685198><span class="icon" data-v-b1685198><!--[--><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" viewbox="0 0 24 24" class="sun" data-v-ce54a7d1><path d="M12,18c-3.3,0-6-2.7-6-6s2.7-6,6-6s6,2.7,6,6S15.3,18,12,18zM12,8c-2.2,0-4,1.8-4,4c0,2.2,1.8,4,4,4c2.2,0,4-1.8,4-4C16,9.8,14.2,8,12,8z"></path><path d="M12,4c-0.6,0-1-0.4-1-1V1c0-0.6,0.4-1,1-1s1,0.4,1,1v2C13,3.6,12.6,4,12,4z"></path><path d="M12,24c-0.6,0-1-0.4-1-1v-2c0-0.6,0.4-1,1-1s1,0.4,1,1v2C13,23.6,12.6,24,12,24z"></path><path d="M5.6,6.6c-0.3,0-0.5-0.1-0.7-0.3L3.5,4.9c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l1.4,1.4c0.4,0.4,0.4,1,0,1.4C6.2,6.5,5.9,6.6,5.6,6.6z"></path><path d="M19.8,20.8c-0.3,0-0.5-0.1-0.7-0.3l-1.4-1.4c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0l1.4,1.4c0.4,0.4,0.4,1,0,1.4C20.3,20.7,20,20.8,19.8,20.8z"></path><path d="M3,13H1c-0.6,0-1-0.4-1-1s0.4-1,1-1h2c0.6,0,1,0.4,1,1S3.6,13,3,13z"></path><path d="M23,13h-2c-0.6,0-1-0.4-1-1s0.4-1,1-1h2c0.6,0,1,0.4,1,1S23.6,13,23,13z"></path><path d="M4.2,20.8c-0.3,0-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4l1.4-1.4c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-1.4,1.4C4.7,20.7,4.5,20.8,4.2,20.8z"></path><path d="M18.4,6.6c-0.3,0-0.5-0.1-0.7-0.3c-0.4-0.4-0.4-1,0-1.4l1.4-1.4c0.4-0.4,1-0.4,1.4,0s0.4,1,0,1.4l-1.4,1.4C18.9,6.5,18.6,6.6,18.4,6.6z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" viewbox="0 0 24 24" class="moon" data-v-ce54a7d1><path d="M12.1,22c-0.3,0-0.6,0-0.9,0c-5.5-0.5-9.5-5.4-9-10.9c0.4-4.8,4.2-8.6,9-9c0.4,0,0.8,0.2,1,0.5c0.2,0.3,0.2,0.8-0.1,1.1c-2,2.7-1.4,6.4,1.3,8.4c2.1,1.6,5,1.6,7.1,0c0.3-0.2,0.7-0.3,1.1-0.1c0.3,0.2,0.5,0.6,0.5,1c-0.2,2.7-1.5,5.1-3.6,6.8C16.6,21.2,14.4,22,12.1,22zM9.3,4.4c-2.9,1-5,3.6-5.2,6.8c-0.4,4.4,2.8,8.3,7.2,8.7c2.1,0.2,4.2-0.4,5.8-1.8c1.1-0.9,1.9-2.1,2.4-3.4c-2.5,0.9-5.3,0.5-7.5-1.1C9.2,11.4,8.1,7.7,9.3,4.4z"></path></svg><!--]--></span></span></button></div></div></div><div class="group" data-v-d0bd9dde><div class="item social-links" data-v-d0bd9dde><div class="VPSocialLinks social-links-list" data-v-d0bd9dde data-v-7bc22406><!--[--><a class="VPSocialLink no-icon" href="https://github.com/" aria-label="github" target="_blank" rel="noopener" data-v-7bc22406 data-v-f80f8133><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a><a class="VPSocialLink no-icon" href="http://www.w3.org/" aria-label target="_blank" rel="noopener" data-v-7bc22406 data-v-f80f8133><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Dribbble</title><path d="M12...6.38z"/></svg></a><!--]--></div></div></div><!--]--><!--]--></div></div></div><!--[--><!--]--><button type="button" class="VPNavBarHamburger hamburger" aria-label="mobile navigation" aria-expanded="false" aria-controls="VPNavScreen" data-v-a0fd61f4 data-v-e5dd9c1c><span class="container" data-v-e5dd9c1c><span class="top" data-v-e5dd9c1c></span><span class="middle" data-v-e5dd9c1c></span><span class="bottom" data-v-e5dd9c1c></span></span></button></div></div></div></div><!----></header><div class="VPLocalNav reached-top" data-v-5a346dfe data-v-79c8c1df><button class="menu" aria-expanded="false" aria-controls="VPSidebarNav" data-v-79c8c1df><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" viewbox="0 0 24 24" class="menu-icon" data-v-79c8c1df><path d="M17,11H3c-0.6,0-1-0.4-1-1s0.4-1,1-1h14c0.6,0,1,0.4,1,1S17.6,11,17,11z"></path><path d="M21,7H3C2.4,7,2,6.6,2,6s0.4-1,1-1h18c0.6,0,1,0.4,1,1S21.6,7,21,7z"></path><path d="M21,15H3c-0.6,0-1-0.4-1-1s0.4-1,1-1h18c0.6,0,1,0.4,1,1S21.6,15,21,15z"></path><path d="M17,19H3c-0.6,0-1-0.4-1-1s0.4-1,1-1h14c0.6,0,1,0.4,1,1S17.6,19,17,19z"></path></svg><span class="menu-text" data-v-79c8c1df>Menu</span></button><div class="VPLocalNavOutlineDropdown" style="--vp-vh:0px;" data-v-79c8c1df data-v-1c15a60a><button data-v-1c15a60a>Return to top</button><!----></div></div><aside class="VPSidebar" data-v-5a346dfe data-v-b00e2fdd><div class="curtain" data-v-b00e2fdd></div><nav class="nav" id="VPSidebarNav" aria-labelledby="sidebar-aria-label" tabindex="-1" data-v-b00e2fdd><span class="visually-hidden" id="sidebar-aria-label" data-v-b00e2fdd> Sidebar Navigation </span><!--[--><!--]--><!--[--><div class="group" data-v-b00e2fdd><section class="VPSidebarItem level-0 has-active" data-v-b00e2fdd data-v-e31bd47b><div class="item" role="button" tabindex="0" data-v-e31bd47b><div class="indicator" data-v-e31bd47b></div><h2 class="text" data-v-e31bd47b>Linux</h2><!----></div><div class="items" data-v-e31bd47b><!--[--><div class="VPSidebarItem level-1 is-link" data-v-e31bd47b data-v-e31bd47b><div class="item" data-v-e31bd47b><div class="indicator" data-v-e31bd47b></div><a class="VPLink link link" href="/blog/Linux/%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9B%B8%E5%85%B3.html" data-v-e31bd47b><!--[--><p class="text" data-v-e31bd47b>服务器相关</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-e31bd47b data-v-e31bd47b><div class="item" data-v-e31bd47b><div class="indicator" data-v-e31bd47b></div><a class="VPLink link link" href="/blog/Linux/Nginx.html" data-v-e31bd47b><!--[--><p class="text" data-v-e31bd47b>Nginx</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-e31bd47b data-v-e31bd47b><div class="item" data-v-e31bd47b><div class="indicator" data-v-e31bd47b></div><a class="VPLink link link" href="/blog/Linux/pm2.html" data-v-e31bd47b><!--[--><p class="text" data-v-e31bd47b>PM2</p><!--]--></a><!----></div><!----></div><div class="VPSidebarItem level-1 is-link" data-v-e31bd47b data-v-e31bd47b><div class="item" data-v-e31bd47b><div class="indicator" data-v-e31bd47b></div><a class="VPLink link link" href="/blog/Linux/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.html" data-v-e31bd47b><!--[--><p class="text" data-v-e31bd47b>Linux常用命令</p><!--]--></a><!----></div><!----></div><!--]--></div></section></div><!--]--><!--[--><!--]--></nav></aside><div class="VPContent has-sidebar" id="VPContent" data-v-5a346dfe data-v-669faec9><div class="VPDoc has-sidebar has-aside" data-v-669faec9 data-v-6b87e69f><!--[--><!--]--><div class="container" data-v-6b87e69f><div class="aside" data-v-6b87e69f><div class="aside-curtain" data-v-6b87e69f></div><div class="aside-container" data-v-6b87e69f><div class="aside-content" data-v-6b87e69f><div class="VPDocAside" data-v-6b87e69f data-v-3f215769><!--[--><!--]--><!--[--><!--]--><div class="VPDocAsideOutline" role="navigation" data-v-3f215769 data-v-d330b1bb><div class="content" data-v-d330b1bb><div class="outline-marker" data-v-d330b1bb></div><div class="outline-title" role="heading" aria-level="2" data-v-d330b1bb>On this page</div><nav aria-labelledby="doc-outline-aria-label" data-v-d330b1bb><span class="visually-hidden" id="doc-outline-aria-label" data-v-d330b1bb> Table of Contents for current page </span><ul class="root" data-v-d330b1bb data-v-d0ee3533><!--[--><!--]--></ul></nav></div></div><!--[--><!--]--><div class="spacer" data-v-3f215769></div><!--[--><!--]--><!----><!--[--><!--]--><!--[--><!--]--></div></div></div></div><div class="content" data-v-6b87e69f><div class="content-container" data-v-6b87e69f><!--[--><!--]--><!----><main class="main" data-v-6b87e69f><div style="position:relative;" class="vp-doc _blog_Linux_%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4" data-v-6b87e69f><div><h1 id="linux-常用命令" tabindex="-1">linux 常用命令 <a class="header-anchor" href="#linux-常用命令" aria-label="Permalink to &quot;linux 常用命令&quot;">​</a></h1><div class="language-txt vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">txt</span><pre class="shiki github-dark has-diff vp-code-dark"><code><span class="line"><span style="color:#e1e4e8;">命令	功能说明</span></span>
+<span class="line"><span style="color:#e1e4e8;"></span></span>
+<span class="line"><span style="color:#e1e4e8;">线上查询及帮助命令 (2 个)</span></span>
+<span class="line"><span style="color:#e1e4e8;"></span></span>
+<span class="line"><span style="color:#e1e4e8;">man	查看命令帮助，命令的词典，更复杂的还有 info，但不常用。</span></span>
+<span class="line"><span style="color:#e1e4e8;">help	查看 Linux 内置命令的帮助，比如 cd 命令。</span></span>
+<span class="line"><span style="color:#e1e4e8;"></span></span>
+<span class="line"><span style="color:#e1e4e8;">文件和目录操作命令 (18 个)</span></span>
+<span class="line"><span style="color:#e1e4e8;"></span></span>
+<span class="line"><span style="color:#e1e4e8;">ls	全拼 list，功能是列出目录的内容及其内容属性信息。</span></span>
+<span class="line"><span style="color:#e1e4e8;">cd	全拼 change directory，功能是从当前工作目录切换到指定的工作目录。</span></span>
+<span class="line"><span style="color:#e1e4e8;">cp	全拼 copy，其功能为复制文件或目录。</span></span>
+<span class="line"><span style="color:#e1e4e8;">find	查找的意思，用于查找目录及目录下的文件。</span></span>
+<span class="line"><span style="color:#e1e4e8;">mkdir	全拼 make directories，其功能是创建目录。</span></span>
+<span class="line"><span style="color:#e1e4e8;">mv	全拼 move，其功能是移动或重命名文件。</span></span>
+<span class="line"><span style="color:#e1e4e8;">pwd	全拼 print working directory，其功能是显示当前工作目录的绝对路径。</span></span>
+<span class="line"><span style="color:#e1e4e8;">rename	用于重命名文件。</span></span>
+<span class="line"><span style="color:#e1e4e8;">rm	全拼 remove，其功能是删除一个或多个文件或目录。</span></span>
+<span class="line"><span style="color:#e1e4e8;">rmdir	全拼 remove empty directories，功能是删除空目录。</span></span>
+<span class="line"><span style="color:#e1e4e8;">touch	创建新的空文件，改变已有文件的时间戳属性。</span></span>
+<span class="line"><span style="color:#e1e4e8;">tree	功能是以树形结构显示目录下的内容。</span></span>
+<span class="line"><span style="color:#e1e4e8;">basename	显示文件名或目录名。</span></span>
+<span class="line"><span style="color:#e1e4e8;">dirname	显示文件或目录路径。</span></span>
+<span class="line"><span style="color:#e1e4e8;">chattr	改变文件的扩展属性。</span></span>
+<span class="line"><span style="color:#e1e4e8;">lsattr	查看文件扩展属性。</span></span>
+<span class="line"><span style="color:#e1e4e8;">file	显示文件的类型。</span></span>
+<span class="line"><span style="color:#e1e4e8;">md5sum	计算和校验文件的 MD5 值。</span></span>
+<span class="line"><span style="color:#e1e4e8;"></span></span>
+<span class="line"><span style="color:#e1e4e8;">查看文件及内容处理命令（21 个）</span></span>
+<span class="line"><span style="color:#e1e4e8;"></span></span>
+<span class="line"><span style="color:#e1e4e8;">cat	全拼 concatenate，功能是用于连接多个文件并且打印到屏幕输出或重定向到指定文件中。</span></span>
+<span class="line"><span style="color:#e1e4e8;">tac	tac 是 cat 的反向拼写，因此命令的功能为反向显示文件内容。</span></span>
+<span class="line"><span style="color:#e1e4e8;">more	分页显示文件内容。</span></span>
+<span class="line"><span style="color:#e1e4e8;">less	分页显示文件内容，more 命令的相反用法。</span></span>
+<span class="line"><span style="color:#e1e4e8;">head	显示文件内容的头部。</span></span>
+<span class="line"><span style="color:#e1e4e8;">tail	显示文件内容的尾部。</span></span>
+<span class="line"><span style="color:#e1e4e8;">cut	将文件的每一行按指定分隔符分割并输出。</span></span>
+<span class="line"><span style="color:#e1e4e8;">split	分割文件为不同的小片段。</span></span>
+<span class="line"><span style="color:#e1e4e8;">paste	按行合并文件内容。</span></span>
+<span class="line"><span style="color:#e1e4e8;">sort	对文件的文本内容排序。</span></span>
+<span class="line"><span style="color:#e1e4e8;">uniq	去除重复行。oldboy</span></span>
+<span class="line"><span style="color:#e1e4e8;">wc	统计文件的行数、单词数或字节数。</span></span>
+<span class="line"><span style="color:#e1e4e8;">iconv	转换文件的编码格式。</span></span>
+<span class="line"><span style="color:#e1e4e8;">dos2unix	将 DOS 格式文件转换成 UNIX 格式。</span></span>
+<span class="line"><span style="color:#e1e4e8;">diff	全拼 difference，比较文件的差异，常用于文本文件。</span></span>
+<span class="line"><span style="color:#e1e4e8;">vimdiff	命令行可视化文件比较工具，常用于文本文件。</span></span>
+<span class="line"><span style="color:#e1e4e8;">rev	反向输出文件内容。</span></span>
+<span class="line"><span style="color:#e1e4e8;">grep/egrep	过滤字符串，三剑客老三。</span></span>
+<span class="line"><span style="color:#e1e4e8;">join	按两个文件的相同字段合并。</span></span>
+<span class="line"><span style="color:#e1e4e8;">tr	替换或删除字符。</span></span>
+<span class="line"><span style="color:#e1e4e8;">vi/vim	命令行文本编辑器。</span></span>
+<span class="line"><span style="color:#e1e4e8;"></span></span>
+<span class="line"><span style="color:#e1e4e8;">文件压缩及解压缩命令（4 个）</span></span>
+<span class="line"><span style="color:#e1e4e8;"></span></span>
+<span class="line"><span style="color:#e1e4e8;">tar	打包压缩。oldboy</span></span>
+<span class="line"><span style="color:#e1e4e8;">unzip	解压文件。</span></span>
+<span class="line"><span style="color:#e1e4e8;">gzip	gzip 压缩工具。</span></span>
+<span class="line"><span style="color:#e1e4e8;">zip	压缩工具。</span></span>
+<span class="line"><span style="color:#e1e4e8;"></span></span>
+<span class="line"><span style="color:#e1e4e8;">信息显示命令（11 个）</span></span>
+<span class="line"><span style="color:#e1e4e8;"></span></span>
+<span class="line"><span style="color:#e1e4e8;">uname	显示操作系统相关信息的命令。</span></span>
+<span class="line"><span style="color:#e1e4e8;">hostname	显示或者设置当前系统的主机名。</span></span>
+<span class="line"><span style="color:#e1e4e8;">dmesg	显示开机信息，用于诊断系统故障。</span></span>
+<span class="line"><span style="color:#e1e4e8;">uptime	显示系统运行时间及负载。</span></span>
+<span class="line"><span style="color:#e1e4e8;">stat	显示文件或文件系统的状态。</span></span>
+<span class="line"><span style="color:#e1e4e8;">du	计算磁盘空间使用情况。</span></span>
+<span class="line"><span style="color:#e1e4e8;">df	报告文件系统磁盘空间的使用情况。</span></span>
+<span class="line"><span style="color:#e1e4e8;">top	实时显示系统资源使用情况。</span></span>
+<span class="line"><span style="color:#e1e4e8;">free	查看系统内存。</span></span>
+<span class="line"><span style="color:#e1e4e8;">date	显示与设置系统时间。</span></span>
+<span class="line"><span style="color:#e1e4e8;">cal	查看日历等时间信息。</span></span>
+<span class="line"><span style="color:#e1e4e8;"></span></span>
+<span class="line"><span style="color:#e1e4e8;">搜索文件命令（4 个）</span></span>
+<span class="line"><span style="color:#e1e4e8;"></span></span>
+<span class="line"><span style="color:#e1e4e8;">which	查找二进制命令，按环境变量 PATH 路径查找。</span></span>
+<span class="line"><span style="color:#e1e4e8;">find	从磁盘遍历查找文件或目录。</span></span>
+<span class="line"><span style="color:#e1e4e8;">whereis	查找二进制命令，按环境变量 PATH 路径查找。</span></span>
+<span class="line"><span style="color:#e1e4e8;">locate	从数据库 (/var/lib/mlocate/mlocate.db) 查找命令，使用 updatedb 更新库。</span></span>
+<span class="line"><span style="color:#e1e4e8;"></span></span>
+<span class="line"><span style="color:#e1e4e8;">用户管理命令（10 个）</span></span>
+<span class="line"><span style="color:#e1e4e8;"></span></span>
+<span class="line"><span style="color:#e1e4e8;">useradd	添加用户。</span></span>
+<span class="line"><span style="color:#e1e4e8;">usermod	修改系统已经存在的用户属性。</span></span>
+<span class="line"><span style="color:#e1e4e8;">userdel	删除用户。</span></span>
+<span class="line"><span style="color:#e1e4e8;">groupadd	添加用户组。</span></span>
+<span class="line"><span style="color:#e1e4e8;">passwd	修改用户密码。</span></span>
+<span class="line"><span style="color:#e1e4e8;">chage	修改用户密码有效期限。</span></span>
+<span class="line"><span style="color:#e1e4e8;">id	查看用户的 uid,gid 及归属的用户组。</span></span>
+<span class="line"><span style="color:#e1e4e8;">su	切换用户身份。</span></span>
+<span class="line"><span style="color:#e1e4e8;">visudo	编辑 / etc/sudoers 文件的专属命令。</span></span>
+<span class="line"><span style="color:#e1e4e8;">sudo	以另外一个用户身份（默认 root 用户）执行事先在 sudoers 文件允许的命令。</span></span>
+<span class="line"><span style="color:#e1e4e8;"></span></span>
+<span class="line"><span style="color:#e1e4e8;">基础网络操作命令（11 个）</span></span>
+<span class="line"><span style="color:#e1e4e8;"></span></span>
+<span class="line"><span style="color:#e1e4e8;">telnet	使用 TELNET 协议远程登录。</span></span>
+<span class="line"><span style="color:#e1e4e8;">ssh	使用 SSH 加密协议远程登录。</span></span>
+<span class="line"><span style="color:#e1e4e8;">scp	全拼 secure copy，用于不同主机之间复制文件。</span></span>
+<span class="line"><span style="color:#e1e4e8;">wget	命令行下载文件。</span></span>
+<span class="line"><span style="color:#e1e4e8;">ping	测试主机之间网络的连通性。</span></span>
+<span class="line"><span style="color:#e1e4e8;">route	显示和设置 linux 系统的路由表。</span></span>
+<span class="line"><span style="color:#e1e4e8;">ifconfig	查看、配置、启用或禁用网络接口的命令。</span></span>
+<span class="line"><span style="color:#e1e4e8;">ifup	启动网卡。</span></span>
+<span class="line"><span style="color:#e1e4e8;">ifdown	关闭网卡。</span></span>
+<span class="line"><span style="color:#e1e4e8;">netstat	查看网络状态。</span></span>
+<span class="line"><span style="color:#e1e4e8;">ss	查看网络状态。</span></span>
+<span class="line"><span style="color:#e1e4e8;"></span></span>
+<span class="line"><span style="color:#e1e4e8;">深入网络操作命令（9 个）</span></span>
+<span class="line"><span style="color:#e1e4e8;"></span></span>
+<span class="line"><span style="color:#e1e4e8;">nmap	网络扫描命令。</span></span>
+<span class="line"><span style="color:#e1e4e8;">lsof	全名 list open files，也就是列举系统中已经被打开的文件。</span></span>
+<span class="line"><span style="color:#e1e4e8;">mail	发送和接收邮件。</span></span>
+<span class="line"><span style="color:#e1e4e8;">mutt	邮件管理命令。</span></span>
+<span class="line"><span style="color:#e1e4e8;">nslookup	交互式查询互联网 DNS 服务器的命令。</span></span>
+<span class="line"><span style="color:#e1e4e8;">dig	查找 DNS 解析过程。</span></span>
+<span class="line"><span style="color:#e1e4e8;">host	查询 DNS 的命令。</span></span>
+<span class="line"><span style="color:#e1e4e8;">traceroute	追踪数据传输路由状况。</span></span>
+<span class="line"><span style="color:#e1e4e8;">tcpdump	命令行的抓包工具。</span></span>
+<span class="line"><span style="color:#e1e4e8;"></span></span>
+<span class="line"><span style="color:#e1e4e8;">有关磁盘与文件系统的命令（16 个）</span></span>
+<span class="line"><span style="color:#e1e4e8;"></span></span>
+<span class="line"><span style="color:#e1e4e8;">mount	挂载文件系统。</span></span>
+<span class="line"><span style="color:#e1e4e8;">umount	卸载文件系统。</span></span>
+<span class="line"><span style="color:#e1e4e8;">fsck	检查并修复 Linux 文件系统。</span></span>
+<span class="line"><span style="color:#e1e4e8;">dd	转换或复制文件。</span></span>
+<span class="line"><span style="color:#e1e4e8;">dumpe2fs	导出 ext2/ext3/ext4 文件系统信息。</span></span>
+<span class="line"><span style="color:#e1e4e8;">dump	ext2/3/4 文件系统备份工具。</span></span>
+<span class="line"><span style="color:#e1e4e8;">fdisk	磁盘分区命令，适用于 2TB 以下磁盘分区。</span></span>
+<span class="line"><span style="color:#e1e4e8;">parted	磁盘分区命令，没有磁盘大小限制，常用于 2TB 以下磁盘分区。</span></span>
+<span class="line"><span style="color:#e1e4e8;">mkfs	格式化创建 Linux 文件系统。</span></span>
+<span class="line"><span style="color:#e1e4e8;">partprobe	更新内核的硬盘分区表信息。</span></span>
+<span class="line"><span style="color:#e1e4e8;">e2fsck	检查 ext2/ext3/ext4 类型文件系统。</span></span>
+<span class="line"><span style="color:#e1e4e8;">mkswap	创建 Linux 交换分区。</span></span>
+<span class="line"><span style="color:#e1e4e8;">swapon	启用交换分区。</span></span>
+<span class="line"><span style="color:#e1e4e8;">swapoff	关闭交换分区。</span></span>
+<span class="line"><span style="color:#e1e4e8;">sync	将内存缓冲区内的数据写入磁盘。</span></span>
+<span class="line"><span style="color:#e1e4e8;">resize2fs	调整 ext2/ext3/ext4 文件系统大小。</span></span>
+<span class="line"><span style="color:#e1e4e8;"></span></span>
+<span class="line"><span style="color:#e1e4e8;">系统权限及用户授权相关命令（4 个）</span></span>
+<span class="line"><span style="color:#e1e4e8;"></span></span>
+<span class="line"><span style="color:#e1e4e8;">chmod	改变文件或目录权限。</span></span>
+<span class="line"><span style="color:#e1e4e8;">chown	改变文件或目录的属主和属组。</span></span>
+<span class="line"><span style="color:#e1e4e8;">chgrp	更改文件用户组。</span></span>
+<span class="line"><span style="color:#e1e4e8;">umask	显示或设置权限掩码。</span></span>
+<span class="line"><span style="color:#e1e4e8;"></span></span>
+<span class="line"><span style="color:#e1e4e8;">查看系统用户登陆信息的命令（7 个）</span></span>
+<span class="line"><span style="color:#e1e4e8;"></span></span>
+<span class="line"><span style="color:#e1e4e8;">whoami	显示当前有效的用户名称，相当于执行 id -un 命令。</span></span>
+<span class="line"><span style="color:#e1e4e8;">who	显示目前登录系统的用户信息。</span></span>
+<span class="line"><span style="color:#e1e4e8;">w	显示已经登陆系统的用户列表，并显示用户正在执行的指令。</span></span>
+<span class="line"><span style="color:#e1e4e8;">last	显示登入系统的用户。</span></span>
+<span class="line"><span style="color:#e1e4e8;">lastlog	显示系统中所有用户最近一次登录信息。</span></span>
+<span class="line"><span style="color:#e1e4e8;">users	显示当前登录系统的所有用户的用户列表。</span></span>
+<span class="line"><span style="color:#e1e4e8;">finger	查找并显示用户信息。</span></span>
+<span class="line"><span style="color:#e1e4e8;"></span></span>
+<span class="line"><span style="color:#e1e4e8;">内置命令及其它（19 个）</span></span>
+<span class="line"><span style="color:#e1e4e8;"></span></span>
+<span class="line"><span style="color:#e1e4e8;">echo	打印变量，或直接输出指定的字符串</span></span>
+<span class="line"><span style="color:#e1e4e8;">printf	将结果格式化输出到标准输出。</span></span>
+<span class="line"><span style="color:#e1e4e8;">rpm	管理 rpm 包的命令。</span></span>
+<span class="line"><span style="color:#e1e4e8;">yum	自动化简单化地管理 rpm 包的命令。</span></span>
+<span class="line"><span style="color:#e1e4e8;">watch	周期性的执行给定的命令，并将命令的输出以全屏方式显示。</span></span>
+<span class="line"><span style="color:#e1e4e8;">alias	设置系统别名。</span></span>
+<span class="line"><span style="color:#e1e4e8;">unalias	取消系统别名。</span></span>
+<span class="line"><span style="color:#e1e4e8;">date	查看或设置系统时间。</span></span>
+<span class="line"><span style="color:#e1e4e8;">clear	清除屏幕，简称清屏。</span></span>
+<span class="line"><span style="color:#e1e4e8;">history	查看命令执行的历史纪录。</span></span>
+<span class="line"><span style="color:#e1e4e8;">eject	弹出光驱。</span></span>
+<span class="line"><span style="color:#e1e4e8;">time	计算命令执行时间。</span></span>
+<span class="line"><span style="color:#e1e4e8;">nc	功能强大的网络工具。</span></span>
+<span class="line"><span style="color:#e1e4e8;">xargs	将标准输入转换成命令行参数。</span></span>
+<span class="line"><span style="color:#e1e4e8;">exec	调用并执行指令的命令。</span></span>
+<span class="line"><span style="color:#e1e4e8;">export	设置或者显示环境变量。</span></span>
+<span class="line"><span style="color:#e1e4e8;">unset	删除变量或函数。</span></span>
+<span class="line"><span style="color:#e1e4e8;">type	用于判断另外一个命令是否是内置命令。</span></span>
+<span class="line"><span style="color:#e1e4e8;">bc	命令行科学计算器</span></span>
+<span class="line"><span style="color:#e1e4e8;"></span></span>
+<span class="line"><span style="color:#e1e4e8;">系统管理与性能监视命令 (9 个)</span></span>
+<span class="line"><span style="color:#e1e4e8;"></span></span>
+<span class="line"><span style="color:#e1e4e8;">chkconfig	管理 Linux 系统开机启动项。</span></span>
+<span class="line"><span style="color:#e1e4e8;">vmstat	虚拟内存统计。</span></span>
+<span class="line"><span style="color:#e1e4e8;">mpstat	显示各个可用 CPU 的状态统计。</span></span>
+<span class="line"><span style="color:#e1e4e8;">iostat	统计系统 IO。</span></span>
+<span class="line"><span style="color:#e1e4e8;">sar	全面地获取系统的 CPU、运行队列、磁盘 I/O、分页（交换区）、内存、 CPU 中断和网络等性能数据。</span></span>
+<span class="line"><span style="color:#e1e4e8;">ipcs	用于报告 Linux 中进程间通信设施的状态，显示的信息包括消息列表、共享内存和信号量的信息。</span></span>
+<span class="line"><span style="color:#e1e4e8;">ipcrm	用来删除一个或更多的消息队列、信号量集或者共享内存标识。</span></span>
+<span class="line"><span style="color:#e1e4e8;">strace	用于诊断、调试 Linux 用户空间跟踪器。我们用它来监控用户空间进程和内核的交互，比如系统调用、信号传递、进程状态变更等。</span></span>
+<span class="line"><span style="color:#e1e4e8;">ltrace	命令会跟踪进程的库函数调用, 它会显现出哪个库函数被调用。</span></span>
+<span class="line"><span style="color:#e1e4e8;"></span></span>
+<span class="line"><span style="color:#e1e4e8;">关机 / 重启 / 注销和查看系统信息的命令（6 个）</span></span>
+<span class="line"><span style="color:#e1e4e8;"></span></span>
+<span class="line"><span style="color:#e1e4e8;">shutdown	关机。</span></span>
+<span class="line"><span style="color:#e1e4e8;">halt	关机。</span></span>
+<span class="line"><span style="color:#e1e4e8;">poweroff	关闭电源。</span></span>
+<span class="line"><span style="color:#e1e4e8;">logout	退出当前登录的 Shell。</span></span>
+<span class="line"><span style="color:#e1e4e8;">exit	退出当前登录的 Shell。</span></span>
+<span class="line"><span style="color:#e1e4e8;">Ctrl+d	退出当前登录的 Shell 的快捷键。</span></span>
+<span class="line"><span style="color:#e1e4e8;"></span></span>
+<span class="line"><span style="color:#e1e4e8;">进程管理相关命令（15 个）</span></span>
+<span class="line"><span style="color:#e1e4e8;"></span></span>
+<span class="line"><span style="color:#e1e4e8;">bg	将一个在后台暂停的命令，变成继续执行 （在后台执行）。</span></span>
+<span class="line"><span style="color:#e1e4e8;">fg	将后台中的命令调至前台继续运行。</span></span>
+<span class="line"><span style="color:#e1e4e8;">jobs	查看当前有多少在后台运行的命令。</span></span>
+<span class="line"><span style="color:#e1e4e8;">kill	终止进程。</span></span>
+<span class="line"><span style="color:#e1e4e8;">killall	通过进程名终止进程。</span></span>
+<span class="line"><span style="color:#e1e4e8;">pkill	通过进程名终止进程。</span></span>
+<span class="line"><span style="color:#e1e4e8;">crontab	定时任务命令。</span></span>
+<span class="line"><span style="color:#e1e4e8;">ps	显示进程的快照。</span></span>
+<span class="line"><span style="color:#e1e4e8;">pstree	树形显示进程。</span></span>
+<span class="line"><span style="color:#e1e4e8;">nice/renice	调整程序运行的优先级。</span></span>
+<span class="line"><span style="color:#e1e4e8;">nohup	忽略挂起信号运行指定的命令。</span></span>
+<span class="line"><span style="color:#e1e4e8;">pgrep	查找匹配条件的进程。</span></span>
+<span class="line"><span style="color:#e1e4e8;">runlevel	查看系统当前运行级别。</span></span>
+<span class="line"><span style="color:#e1e4e8;">init	切换运行级别。</span></span>
+<span class="line"><span style="color:#e1e4e8;">service	启动、停止、重新启动和关闭系统服务，还可以显示所有系统服务的当前状态。</span></span></code></pre><pre class="shiki github-light has-diff vp-code-light"><code><span class="line"><span style="color:#24292e;">命令	功能说明</span></span>
+<span class="line"><span style="color:#24292e;"></span></span>
+<span class="line"><span style="color:#24292e;">线上查询及帮助命令 (2 个)</span></span>
+<span class="line"><span style="color:#24292e;"></span></span>
+<span class="line"><span style="color:#24292e;">man	查看命令帮助，命令的词典，更复杂的还有 info，但不常用。</span></span>
+<span class="line"><span style="color:#24292e;">help	查看 Linux 内置命令的帮助，比如 cd 命令。</span></span>
+<span class="line"><span style="color:#24292e;"></span></span>
+<span class="line"><span style="color:#24292e;">文件和目录操作命令 (18 个)</span></span>
+<span class="line"><span style="color:#24292e;"></span></span>
+<span class="line"><span style="color:#24292e;">ls	全拼 list，功能是列出目录的内容及其内容属性信息。</span></span>
+<span class="line"><span style="color:#24292e;">cd	全拼 change directory，功能是从当前工作目录切换到指定的工作目录。</span></span>
+<span class="line"><span style="color:#24292e;">cp	全拼 copy，其功能为复制文件或目录。</span></span>
+<span class="line"><span style="color:#24292e;">find	查找的意思，用于查找目录及目录下的文件。</span></span>
+<span class="line"><span style="color:#24292e;">mkdir	全拼 make directories，其功能是创建目录。</span></span>
+<span class="line"><span style="color:#24292e;">mv	全拼 move，其功能是移动或重命名文件。</span></span>
+<span class="line"><span style="color:#24292e;">pwd	全拼 print working directory，其功能是显示当前工作目录的绝对路径。</span></span>
+<span class="line"><span style="color:#24292e;">rename	用于重命名文件。</span></span>
+<span class="line"><span style="color:#24292e;">rm	全拼 remove，其功能是删除一个或多个文件或目录。</span></span>
+<span class="line"><span style="color:#24292e;">rmdir	全拼 remove empty directories，功能是删除空目录。</span></span>
+<span class="line"><span style="color:#24292e;">touch	创建新的空文件，改变已有文件的时间戳属性。</span></span>
+<span class="line"><span style="color:#24292e;">tree	功能是以树形结构显示目录下的内容。</span></span>
+<span class="line"><span style="color:#24292e;">basename	显示文件名或目录名。</span></span>
+<span class="line"><span style="color:#24292e;">dirname	显示文件或目录路径。</span></span>
+<span class="line"><span style="color:#24292e;">chattr	改变文件的扩展属性。</span></span>
+<span class="line"><span style="color:#24292e;">lsattr	查看文件扩展属性。</span></span>
+<span class="line"><span style="color:#24292e;">file	显示文件的类型。</span></span>
+<span class="line"><span style="color:#24292e;">md5sum	计算和校验文件的 MD5 值。</span></span>
+<span class="line"><span style="color:#24292e;"></span></span>
+<span class="line"><span style="color:#24292e;">查看文件及内容处理命令（21 个）</span></span>
+<span class="line"><span style="color:#24292e;"></span></span>
+<span class="line"><span style="color:#24292e;">cat	全拼 concatenate，功能是用于连接多个文件并且打印到屏幕输出或重定向到指定文件中。</span></span>
+<span class="line"><span style="color:#24292e;">tac	tac 是 cat 的反向拼写，因此命令的功能为反向显示文件内容。</span></span>
+<span class="line"><span style="color:#24292e;">more	分页显示文件内容。</span></span>
+<span class="line"><span style="color:#24292e;">less	分页显示文件内容，more 命令的相反用法。</span></span>
+<span class="line"><span style="color:#24292e;">head	显示文件内容的头部。</span></span>
+<span class="line"><span style="color:#24292e;">tail	显示文件内容的尾部。</span></span>
+<span class="line"><span style="color:#24292e;">cut	将文件的每一行按指定分隔符分割并输出。</span></span>
+<span class="line"><span style="color:#24292e;">split	分割文件为不同的小片段。</span></span>
+<span class="line"><span style="color:#24292e;">paste	按行合并文件内容。</span></span>
+<span class="line"><span style="color:#24292e;">sort	对文件的文本内容排序。</span></span>
+<span class="line"><span style="color:#24292e;">uniq	去除重复行。oldboy</span></span>
+<span class="line"><span style="color:#24292e;">wc	统计文件的行数、单词数或字节数。</span></span>
+<span class="line"><span style="color:#24292e;">iconv	转换文件的编码格式。</span></span>
+<span class="line"><span style="color:#24292e;">dos2unix	将 DOS 格式文件转换成 UNIX 格式。</span></span>
+<span class="line"><span style="color:#24292e;">diff	全拼 difference，比较文件的差异，常用于文本文件。</span></span>
+<span class="line"><span style="color:#24292e;">vimdiff	命令行可视化文件比较工具，常用于文本文件。</span></span>
+<span class="line"><span style="color:#24292e;">rev	反向输出文件内容。</span></span>
+<span class="line"><span style="color:#24292e;">grep/egrep	过滤字符串，三剑客老三。</span></span>
+<span class="line"><span style="color:#24292e;">join	按两个文件的相同字段合并。</span></span>
+<span class="line"><span style="color:#24292e;">tr	替换或删除字符。</span></span>
+<span class="line"><span style="color:#24292e;">vi/vim	命令行文本编辑器。</span></span>
+<span class="line"><span style="color:#24292e;"></span></span>
+<span class="line"><span style="color:#24292e;">文件压缩及解压缩命令（4 个）</span></span>
+<span class="line"><span style="color:#24292e;"></span></span>
+<span class="line"><span style="color:#24292e;">tar	打包压缩。oldboy</span></span>
+<span class="line"><span style="color:#24292e;">unzip	解压文件。</span></span>
+<span class="line"><span style="color:#24292e;">gzip	gzip 压缩工具。</span></span>
+<span class="line"><span style="color:#24292e;">zip	压缩工具。</span></span>
+<span class="line"><span style="color:#24292e;"></span></span>
+<span class="line"><span style="color:#24292e;">信息显示命令（11 个）</span></span>
+<span class="line"><span style="color:#24292e;"></span></span>
+<span class="line"><span style="color:#24292e;">uname	显示操作系统相关信息的命令。</span></span>
+<span class="line"><span style="color:#24292e;">hostname	显示或者设置当前系统的主机名。</span></span>
+<span class="line"><span style="color:#24292e;">dmesg	显示开机信息，用于诊断系统故障。</span></span>
+<span class="line"><span style="color:#24292e;">uptime	显示系统运行时间及负载。</span></span>
+<span class="line"><span style="color:#24292e;">stat	显示文件或文件系统的状态。</span></span>
+<span class="line"><span style="color:#24292e;">du	计算磁盘空间使用情况。</span></span>
+<span class="line"><span style="color:#24292e;">df	报告文件系统磁盘空间的使用情况。</span></span>
+<span class="line"><span style="color:#24292e;">top	实时显示系统资源使用情况。</span></span>
+<span class="line"><span style="color:#24292e;">free	查看系统内存。</span></span>
+<span class="line"><span style="color:#24292e;">date	显示与设置系统时间。</span></span>
+<span class="line"><span style="color:#24292e;">cal	查看日历等时间信息。</span></span>
+<span class="line"><span style="color:#24292e;"></span></span>
+<span class="line"><span style="color:#24292e;">搜索文件命令（4 个）</span></span>
+<span class="line"><span style="color:#24292e;"></span></span>
+<span class="line"><span style="color:#24292e;">which	查找二进制命令，按环境变量 PATH 路径查找。</span></span>
+<span class="line"><span style="color:#24292e;">find	从磁盘遍历查找文件或目录。</span></span>
+<span class="line"><span style="color:#24292e;">whereis	查找二进制命令，按环境变量 PATH 路径查找。</span></span>
+<span class="line"><span style="color:#24292e;">locate	从数据库 (/var/lib/mlocate/mlocate.db) 查找命令，使用 updatedb 更新库。</span></span>
+<span class="line"><span style="color:#24292e;"></span></span>
+<span class="line"><span style="color:#24292e;">用户管理命令（10 个）</span></span>
+<span class="line"><span style="color:#24292e;"></span></span>
+<span class="line"><span style="color:#24292e;">useradd	添加用户。</span></span>
+<span class="line"><span style="color:#24292e;">usermod	修改系统已经存在的用户属性。</span></span>
+<span class="line"><span style="color:#24292e;">userdel	删除用户。</span></span>
+<span class="line"><span style="color:#24292e;">groupadd	添加用户组。</span></span>
+<span class="line"><span style="color:#24292e;">passwd	修改用户密码。</span></span>
+<span class="line"><span style="color:#24292e;">chage	修改用户密码有效期限。</span></span>
+<span class="line"><span style="color:#24292e;">id	查看用户的 uid,gid 及归属的用户组。</span></span>
+<span class="line"><span style="color:#24292e;">su	切换用户身份。</span></span>
+<span class="line"><span style="color:#24292e;">visudo	编辑 / etc/sudoers 文件的专属命令。</span></span>
+<span class="line"><span style="color:#24292e;">sudo	以另外一个用户身份（默认 root 用户）执行事先在 sudoers 文件允许的命令。</span></span>
+<span class="line"><span style="color:#24292e;"></span></span>
+<span class="line"><span style="color:#24292e;">基础网络操作命令（11 个）</span></span>
+<span class="line"><span style="color:#24292e;"></span></span>
+<span class="line"><span style="color:#24292e;">telnet	使用 TELNET 协议远程登录。</span></span>
+<span class="line"><span style="color:#24292e;">ssh	使用 SSH 加密协议远程登录。</span></span>
+<span class="line"><span style="color:#24292e;">scp	全拼 secure copy，用于不同主机之间复制文件。</span></span>
+<span class="line"><span style="color:#24292e;">wget	命令行下载文件。</span></span>
+<span class="line"><span style="color:#24292e;">ping	测试主机之间网络的连通性。</span></span>
+<span class="line"><span style="color:#24292e;">route	显示和设置 linux 系统的路由表。</span></span>
+<span class="line"><span style="color:#24292e;">ifconfig	查看、配置、启用或禁用网络接口的命令。</span></span>
+<span class="line"><span style="color:#24292e;">ifup	启动网卡。</span></span>
+<span class="line"><span style="color:#24292e;">ifdown	关闭网卡。</span></span>
+<span class="line"><span style="color:#24292e;">netstat	查看网络状态。</span></span>
+<span class="line"><span style="color:#24292e;">ss	查看网络状态。</span></span>
+<span class="line"><span style="color:#24292e;"></span></span>
+<span class="line"><span style="color:#24292e;">深入网络操作命令（9 个）</span></span>
+<span class="line"><span style="color:#24292e;"></span></span>
+<span class="line"><span style="color:#24292e;">nmap	网络扫描命令。</span></span>
+<span class="line"><span style="color:#24292e;">lsof	全名 list open files，也就是列举系统中已经被打开的文件。</span></span>
+<span class="line"><span style="color:#24292e;">mail	发送和接收邮件。</span></span>
+<span class="line"><span style="color:#24292e;">mutt	邮件管理命令。</span></span>
+<span class="line"><span style="color:#24292e;">nslookup	交互式查询互联网 DNS 服务器的命令。</span></span>
+<span class="line"><span style="color:#24292e;">dig	查找 DNS 解析过程。</span></span>
+<span class="line"><span style="color:#24292e;">host	查询 DNS 的命令。</span></span>
+<span class="line"><span style="color:#24292e;">traceroute	追踪数据传输路由状况。</span></span>
+<span class="line"><span style="color:#24292e;">tcpdump	命令行的抓包工具。</span></span>
+<span class="line"><span style="color:#24292e;"></span></span>
+<span class="line"><span style="color:#24292e;">有关磁盘与文件系统的命令（16 个）</span></span>
+<span class="line"><span style="color:#24292e;"></span></span>
+<span class="line"><span style="color:#24292e;">mount	挂载文件系统。</span></span>
+<span class="line"><span style="color:#24292e;">umount	卸载文件系统。</span></span>
+<span class="line"><span style="color:#24292e;">fsck	检查并修复 Linux 文件系统。</span></span>
+<span class="line"><span style="color:#24292e;">dd	转换或复制文件。</span></span>
+<span class="line"><span style="color:#24292e;">dumpe2fs	导出 ext2/ext3/ext4 文件系统信息。</span></span>
+<span class="line"><span style="color:#24292e;">dump	ext2/3/4 文件系统备份工具。</span></span>
+<span class="line"><span style="color:#24292e;">fdisk	磁盘分区命令，适用于 2TB 以下磁盘分区。</span></span>
+<span class="line"><span style="color:#24292e;">parted	磁盘分区命令，没有磁盘大小限制，常用于 2TB 以下磁盘分区。</span></span>
+<span class="line"><span style="color:#24292e;">mkfs	格式化创建 Linux 文件系统。</span></span>
+<span class="line"><span style="color:#24292e;">partprobe	更新内核的硬盘分区表信息。</span></span>
+<span class="line"><span style="color:#24292e;">e2fsck	检查 ext2/ext3/ext4 类型文件系统。</span></span>
+<span class="line"><span style="color:#24292e;">mkswap	创建 Linux 交换分区。</span></span>
+<span class="line"><span style="color:#24292e;">swapon	启用交换分区。</span></span>
+<span class="line"><span style="color:#24292e;">swapoff	关闭交换分区。</span></span>
+<span class="line"><span style="color:#24292e;">sync	将内存缓冲区内的数据写入磁盘。</span></span>
+<span class="line"><span style="color:#24292e;">resize2fs	调整 ext2/ext3/ext4 文件系统大小。</span></span>
+<span class="line"><span style="color:#24292e;"></span></span>
+<span class="line"><span style="color:#24292e;">系统权限及用户授权相关命令（4 个）</span></span>
+<span class="line"><span style="color:#24292e;"></span></span>
+<span class="line"><span style="color:#24292e;">chmod	改变文件或目录权限。</span></span>
+<span class="line"><span style="color:#24292e;">chown	改变文件或目录的属主和属组。</span></span>
+<span class="line"><span style="color:#24292e;">chgrp	更改文件用户组。</span></span>
+<span class="line"><span style="color:#24292e;">umask	显示或设置权限掩码。</span></span>
+<span class="line"><span style="color:#24292e;"></span></span>
+<span class="line"><span style="color:#24292e;">查看系统用户登陆信息的命令（7 个）</span></span>
+<span class="line"><span style="color:#24292e;"></span></span>
+<span class="line"><span style="color:#24292e;">whoami	显示当前有效的用户名称，相当于执行 id -un 命令。</span></span>
+<span class="line"><span style="color:#24292e;">who	显示目前登录系统的用户信息。</span></span>
+<span class="line"><span style="color:#24292e;">w	显示已经登陆系统的用户列表，并显示用户正在执行的指令。</span></span>
+<span class="line"><span style="color:#24292e;">last	显示登入系统的用户。</span></span>
+<span class="line"><span style="color:#24292e;">lastlog	显示系统中所有用户最近一次登录信息。</span></span>
+<span class="line"><span style="color:#24292e;">users	显示当前登录系统的所有用户的用户列表。</span></span>
+<span class="line"><span style="color:#24292e;">finger	查找并显示用户信息。</span></span>
+<span class="line"><span style="color:#24292e;"></span></span>
+<span class="line"><span style="color:#24292e;">内置命令及其它（19 个）</span></span>
+<span class="line"><span style="color:#24292e;"></span></span>
+<span class="line"><span style="color:#24292e;">echo	打印变量，或直接输出指定的字符串</span></span>
+<span class="line"><span style="color:#24292e;">printf	将结果格式化输出到标准输出。</span></span>
+<span class="line"><span style="color:#24292e;">rpm	管理 rpm 包的命令。</span></span>
+<span class="line"><span style="color:#24292e;">yum	自动化简单化地管理 rpm 包的命令。</span></span>
+<span class="line"><span style="color:#24292e;">watch	周期性的执行给定的命令，并将命令的输出以全屏方式显示。</span></span>
+<span class="line"><span style="color:#24292e;">alias	设置系统别名。</span></span>
+<span class="line"><span style="color:#24292e;">unalias	取消系统别名。</span></span>
+<span class="line"><span style="color:#24292e;">date	查看或设置系统时间。</span></span>
+<span class="line"><span style="color:#24292e;">clear	清除屏幕，简称清屏。</span></span>
+<span class="line"><span style="color:#24292e;">history	查看命令执行的历史纪录。</span></span>
+<span class="line"><span style="color:#24292e;">eject	弹出光驱。</span></span>
+<span class="line"><span style="color:#24292e;">time	计算命令执行时间。</span></span>
+<span class="line"><span style="color:#24292e;">nc	功能强大的网络工具。</span></span>
+<span class="line"><span style="color:#24292e;">xargs	将标准输入转换成命令行参数。</span></span>
+<span class="line"><span style="color:#24292e;">exec	调用并执行指令的命令。</span></span>
+<span class="line"><span style="color:#24292e;">export	设置或者显示环境变量。</span></span>
+<span class="line"><span style="color:#24292e;">unset	删除变量或函数。</span></span>
+<span class="line"><span style="color:#24292e;">type	用于判断另外一个命令是否是内置命令。</span></span>
+<span class="line"><span style="color:#24292e;">bc	命令行科学计算器</span></span>
+<span class="line"><span style="color:#24292e;"></span></span>
+<span class="line"><span style="color:#24292e;">系统管理与性能监视命令 (9 个)</span></span>
+<span class="line"><span style="color:#24292e;"></span></span>
+<span class="line"><span style="color:#24292e;">chkconfig	管理 Linux 系统开机启动项。</span></span>
+<span class="line"><span style="color:#24292e;">vmstat	虚拟内存统计。</span></span>
+<span class="line"><span style="color:#24292e;">mpstat	显示各个可用 CPU 的状态统计。</span></span>
+<span class="line"><span style="color:#24292e;">iostat	统计系统 IO。</span></span>
+<span class="line"><span style="color:#24292e;">sar	全面地获取系统的 CPU、运行队列、磁盘 I/O、分页（交换区）、内存、 CPU 中断和网络等性能数据。</span></span>
+<span class="line"><span style="color:#24292e;">ipcs	用于报告 Linux 中进程间通信设施的状态，显示的信息包括消息列表、共享内存和信号量的信息。</span></span>
+<span class="line"><span style="color:#24292e;">ipcrm	用来删除一个或更多的消息队列、信号量集或者共享内存标识。</span></span>
+<span class="line"><span style="color:#24292e;">strace	用于诊断、调试 Linux 用户空间跟踪器。我们用它来监控用户空间进程和内核的交互，比如系统调用、信号传递、进程状态变更等。</span></span>
+<span class="line"><span style="color:#24292e;">ltrace	命令会跟踪进程的库函数调用, 它会显现出哪个库函数被调用。</span></span>
+<span class="line"><span style="color:#24292e;"></span></span>
+<span class="line"><span style="color:#24292e;">关机 / 重启 / 注销和查看系统信息的命令（6 个）</span></span>
+<span class="line"><span style="color:#24292e;"></span></span>
+<span class="line"><span style="color:#24292e;">shutdown	关机。</span></span>
+<span class="line"><span style="color:#24292e;">halt	关机。</span></span>
+<span class="line"><span style="color:#24292e;">poweroff	关闭电源。</span></span>
+<span class="line"><span style="color:#24292e;">logout	退出当前登录的 Shell。</span></span>
+<span class="line"><span style="color:#24292e;">exit	退出当前登录的 Shell。</span></span>
+<span class="line"><span style="color:#24292e;">Ctrl+d	退出当前登录的 Shell 的快捷键。</span></span>
+<span class="line"><span style="color:#24292e;"></span></span>
+<span class="line"><span style="color:#24292e;">进程管理相关命令（15 个）</span></span>
+<span class="line"><span style="color:#24292e;"></span></span>
+<span class="line"><span style="color:#24292e;">bg	将一个在后台暂停的命令，变成继续执行 （在后台执行）。</span></span>
+<span class="line"><span style="color:#24292e;">fg	将后台中的命令调至前台继续运行。</span></span>
+<span class="line"><span style="color:#24292e;">jobs	查看当前有多少在后台运行的命令。</span></span>
+<span class="line"><span style="color:#24292e;">kill	终止进程。</span></span>
+<span class="line"><span style="color:#24292e;">killall	通过进程名终止进程。</span></span>
+<span class="line"><span style="color:#24292e;">pkill	通过进程名终止进程。</span></span>
+<span class="line"><span style="color:#24292e;">crontab	定时任务命令。</span></span>
+<span class="line"><span style="color:#24292e;">ps	显示进程的快照。</span></span>
+<span class="line"><span style="color:#24292e;">pstree	树形显示进程。</span></span>
+<span class="line"><span style="color:#24292e;">nice/renice	调整程序运行的优先级。</span></span>
+<span class="line"><span style="color:#24292e;">nohup	忽略挂起信号运行指定的命令。</span></span>
+<span class="line"><span style="color:#24292e;">pgrep	查找匹配条件的进程。</span></span>
+<span class="line"><span style="color:#24292e;">runlevel	查看系统当前运行级别。</span></span>
+<span class="line"><span style="color:#24292e;">init	切换运行级别。</span></span>
+<span class="line"><span style="color:#24292e;">service	启动、停止、重新启动和关闭系统服务，还可以显示所有系统服务的当前状态。</span></span></code></pre></div></div></div></main><footer class="VPDocFooter" data-v-6b87e69f data-v-ef5dee53><!--[--><!--]--><!----><nav class="prev-next" data-v-ef5dee53><div class="pager" data-v-ef5dee53><a class="pager-link prev" href="/blog/Linux/pm2.html" data-v-ef5dee53><span class="desc" data-v-ef5dee53>Previous page</span><span class="title" data-v-ef5dee53>PM2</span></a></div><div class="pager" data-v-ef5dee53><!----></div></nav></footer><!--[--><!--]--></div></div></div><!--[--><!--]--></div></div><!----><!--[--><!--]--></div></div>
+    <script>window.__VP_HASH_MAP__=JSON.parse("{\"linux_pm2.md\":\"9e04c14e\",\"articles_css_postcss配置.md\":\"8cac9992\",\"3d_blender_blender建模地形.md\":\"055f9c58\",\"3d_blender_blender快捷键.md\":\"7464d2e0\",\"articles_css_tailwindcss.md\":\"201c8546\",\"articles_cli.md\":\"02677b98\",\"3d_threejs_threejs.md\":\"737d5719\",\"articles_css_css生成器.md\":\"2b16d7d4\",\"linux_nginx.md\":\"3487888b\",\"linux_服务器相关.md\":\"480d18cb\",\"articles_docker.md\":\"431d10a5\",\"articles_css_常用css.md\":\"086f2b76\",\"articles_lib_index.md\":\"ba871671\",\"articles_lib_office.md\":\"12449e9e\",\"articles_docker进入容器.md\":\"1128f15d\",\"articles_index.md\":\"8cab68f3\",\"articles_css_sass语法.md\":\"8bb954d9\",\"tool_gitpage.md\":\"1fba4f95\",\"articles_lib_3d.md\":\"8c10489e\",\"articles_https_vite项目一些配置.md\":\"da7bf0f5\",\"articles_webrtc.md\":\"b51d789b\",\"articles_css_css原子样式.md\":\"987273c3\",\"articles_commonjs与esmodule.md\":\"defaf9c8\",\"index.md\":\"32d44b8c\",\"notes_http模块.md\":\"48a2dd08\",\"notes_vscode权威指南阅读.md\":\"fce565f2\",\"articles_常用正则.md\":\"9edd66ca\",\"project_canvas.md\":\"7174ad55\",\"notes_产品经理.md\":\"55683537\",\"notes_webrtc.md\":\"3026dc88\",\"articles_常用代码片段.md\":\"4a2d9e77\",\"project_editor.md\":\"6556ca5c\",\"project_electron.md\":\"00334a6e\",\"notes_图床.md\":\"e3f0615d\",\"project_flutter.md\":\"68e84d97\",\"3d_threejs_threejs-env.md\":\"f188b6d2\",\"articles_css_scss.md\":\"c5547081\",\"tool_index.md\":\"b7f95e5d\",\"linux_常用命令.md\":\"7f202295\",\"articles_yarn.md\":\"9dd02160\",\"articles_lib_dayjs.md\":\"c755e495\",\"tool_vscode.md\":\"b4592984\",\"articles_nodejs_express.md\":\"634ccdd0\",\"tool_mdsyntax.md\":\"5ab9ede5\",\"articles_nodejs_nest.md\":\"19416a76\",\"articles_typescript.md\":\"f96cec2a\",\"articles_nodejs_node.md\":\"195ce602\",\"articles_nodejs_node全栈.md\":\"c029082a\",\"articles_emmet.md\":\"aa7b911b\",\"articles_nodejs_mongo.md\":\"847bc782\",\"articles_lib_canvas.md\":\"76f7f3f8\",\"nav_index.md\":\"59b335bd\",\"articles_packagejson指南.md\":\"9595e98b\",\"articles_https_localhost.md\":\"4e27765f\",\"articles_nodejs_socketio.md\":\"a8af6294\",\"project_lowcode.md\":\"45bfdb35\",\"project_index.md\":\"f32c1ebf\",\"articles_css_css通用默认样式.md\":\"ce4ef0c8\",\"project_onlineoffice.md\":\"b712e602\",\"3d_blender_3d模型-光源-动画.md\":\"56def768\",\"notes_index.md\":\"e475c479\",\"notes_onlyoffice.md\":\"884de903\",\"project_threejs.md\":\"0b62bdbc\",\"tool_通义灵码使用.md\":\"2b3e8297\",\"project_ide.md\":\"299a6836\",\"articles_https_axios.md\":\"0d4cf231\",\"project_video.md\":\"2741f1d6\",\"articles_在线文件编辑.md\":\"a02dbd12\",\"tool_git.md\":\"1ab20e78\"}");window.__VP_SITE_DATA__=JSON.parse("{\"lang\":\"en-US\",\"dir\":\"ltr\",\"title\":\"My PAGE\",\"description\":\"A VitePress site\",\"base\":\"/blog/\",\"head\":[],\"appearance\":true,\"themeConfig\":{\"logo\":\"/logo.jpg\",\"aside\":\"true\",\"nav\":[{\"text\":\"首页\",\"link\":\"/\"},{\"text\":\"导航\",\"link\":\"/nav/\"},{\"text\":\"项目\",\"items\":[{\"text\":\"threejs\",\"link\":\"/project/threejs\"},{\"text\":\"canvas\",\"link\":\"/project/canvas\"},{\"text\":\"electron\",\"link\":\"/project/electron\"},{\"text\":\"editor\",\"link\":\"/project/editor\"},{\"text\":\"lowcode\",\"link\":\"/project/lowcode\"}]},{\"text\":\"Linux\",\"items\":[{\"text\":\"Linux\",\"items\":[{\"text\":\"服务器相关\",\"link\":\"/Linux/服务器相关\"},{\"text\":\"Nginx\",\"link\":\"/Linux/Nginx\"},{\"text\":\"PM2\",\"link\":\"/Linux/pm2\"},{\"text\":\"Linux常用命令\",\"link\":\"/Linux/常用命令\"}]}]},{\"text\":\"前端\",\"items\":[{\"text\":\"编程语言\",\"items\":[{\"text\":\"typescript\",\"link\":\"/articles/typescript\"},{\"text\":\"emmet\",\"link\":\"/articles/emmet\"}]},{\"text\":\"工程化\",\"items\":[{\"text\":\"cli\",\"link\":\"/articles/cli\"},{\"text\":\"package.json指南\",\"link\":\"/articles/packagejson指南\"},{\"text\":\"yarn\",\"link\":\"/articles/yarn\"}]},{\"text\":\"Node.js\",\"items\":[{\"text\":\"node\",\"link\":\"/articles/nodejs/node\"},{\"text\":\"express\",\"link\":\"/articles/nodejs/express\"},{\"text\":\"nestjs\",\"link\":\"/articles/nodejs/nest\"},{\"text\":\"node全栈\",\"link\":\"/articles/nodejs/node全栈\"},{\"text\":\"mongoDB\",\"link\":\"/articles/nodejs/mongo\"},{\"text\":\"socketIO\",\"link\":\"/articles/nodejs/socketIO\"},{\"text\":\"docker\",\"link\":\"/articles/docker\"},{\"text\":\"docker进入容器里的命令行\",\"link\":\"/articles/docker进入容器\"},{\"text\":\"webrtc\",\"link\":\"/articles/webrtc\"}]},{\"text\":\"模块化\",\"items\":[{\"text\":\"commonjs与esmodule\",\"link\":\"/articles/commonjs与esmodule\"}]},{\"text\":\"网络\",\"items\":[{\"text\":\"axios\",\"link\":\"/articles/https/axios\"},{\"text\":\"localhost和0.0.0.0的区别\",\"link\":\"/articles/https/localhost\"},{\"text\":\"vite项目的一些配置\",\"link\":\"/articles/https/vite项目一些配置\"}]},{\"text\":\"CSS\",\"items\":[{\"text\":\"css原子样式\",\"link\":\"/articles/css/css原子样式\"},{\"text\":\"css通用默认样式\",\"link\":\"/articles/css/css通用默认样式\"},{\"text\":\"postcss配置\",\"link\":\"/articles/css/postcss配置\"},{\"text\":\"scss\",\"link\":\"/articles/css/scss\"},{\"text\":\"tailwindcss\",\"link\":\"/articles/css/tailwindcss\"},{\"text\":\"常用css\",\"link\":\"/articles/css/常用css\"},{\"text\":\"css生成器\",\"link\":\"/articles/css/css生成器\"},{\"text\":\"sass语法\",\"link\":\"/articles/css/sass语法\"}]},{\"text\":\"常用代码片段\",\"items\":[{\"text\":\"常用正则\",\"link\":\"/articles/常用正则\"},{\"text\":\"常用代码片段\",\"link\":\"/articles/常用代码片段\"}]},{\"text\":\"在线文档\",\"link\":\"/articles/在线文件编辑\"}]},{\"text\":\"3D\",\"items\":[{\"text\":\"threejs\",\"items\":[{\"text\":\"threejs环境搭建\",\"link\":\"/3D/threejs/threejs-env\"},{\"text\":\"threejs\",\"link\":\"/3D/threejs/threejs\"}]},{\"text\":\"blender\",\"items\":[{\"text\":\"blender快捷键\",\"link\":\"/3D/blender/blender快捷键\"},{\"text\":\"3D模型-光源-动画\",\"link\":\"/3D/blender/3D模型-光源-动画\"},{\"text\":\"blender建模地形\",\"link\":\"/3D/blender/blender建模地形\"}]}]},{\"text\":\"工具\",\"items\":[{\"text\":\"git\",\"link\":\"/tool/git\"},{\"text\":\"markdown语法\",\"link\":\"/tool/mdsyntax\"},{\"text\":\"gitpage\",\"link\":\"/tool/gitpage\"},{\"text\":\"通义灵码\",\"link\":\"/tool/通义灵码使用\"},{\"text\":\"vscode\",\"link\":\"/tool/vscode\"},{\"text\":\"图床\",\"link\":\"/notes/图床\"}]},{\"text\":\"笔记\",\"items\":[{\"text\":\"webrtc\",\"link\":\"/notes/webrtc\"},{\"text\":\"onlyoffice\",\"link\":\"/notes/onlyoffice\"},{\"text\":\"产品经理\",\"link\":\"/notes/产品经理\"},{\"text\":\"http模块\",\"link\":\"/notes/http模块\"}]},{\"text\":\"常用链接\",\"items\":[{\"text\":\"掘金\",\"link\":\"https://juejin.cn/user/726107228492253\"},{\"text\":\"Github\",\"link\":\"https://github.com/coding-lin\"}]}],\"sidebar\":{\"/home/\":[{\"text\":\"home\",\"items\":[{\"text\":\"website\",\"link\":\"/nav/website\"}]}],\"/project/\":[{\"text\":\"threejs\",\"link\":\"/project/threejs\"},{\"text\":\"canvas\",\"link\":\"/project/canvas\"},{\"text\":\"electron\",\"link\":\"/project/electron\"},{\"text\":\"editor\",\"link\":\"/project/editor\"},{\"text\":\"lowcode\",\"link\":\"/project/lowcode\"}],\"/articles/\":[{\"text\":\"编程语言\",\"items\":[{\"text\":\"typescript\",\"link\":\"/articles/typescript\"},{\"text\":\"emmet\",\"link\":\"/articles/emmet\"}]},{\"text\":\"工程化\",\"items\":[{\"text\":\"cli\",\"link\":\"/articles/cli\"},{\"text\":\"package.json指南\",\"link\":\"/articles/packagejson指南\"},{\"text\":\"yarn\",\"link\":\"/articles/yarn\"}]},{\"text\":\"Node.js\",\"items\":[{\"text\":\"node\",\"link\":\"/articles/nodejs/node\"},{\"text\":\"express\",\"link\":\"/articles/nodejs/express\"},{\"text\":\"nestjs\",\"link\":\"/articles/nodejs/nest\"},{\"text\":\"node全栈\",\"link\":\"/articles/nodejs/node全栈\"},{\"text\":\"mongoDB\",\"link\":\"/articles/nodejs/mongo\"},{\"text\":\"socketIO\",\"link\":\"/articles/nodejs/socketIO\"},{\"text\":\"docker\",\"link\":\"/articles/docker\"},{\"text\":\"docker进入容器里的命令行\",\"link\":\"/articles/docker进入容器\"},{\"text\":\"webrtc\",\"link\":\"/articles/webrtc\"}]},{\"text\":\"模块化\",\"items\":[{\"text\":\"commonjs与esmodule\",\"link\":\"/articles/commonjs与esmodule\"}]},{\"text\":\"网络\",\"items\":[{\"text\":\"axios\",\"link\":\"/articles/https/axios\"},{\"text\":\"localhost和0.0.0.0的区别\",\"link\":\"/articles/https/localhost\"},{\"text\":\"vite项目的一些配置\",\"link\":\"/articles/https/vite项目一些配置\"}]},{\"text\":\"CSS\",\"items\":[{\"text\":\"css原子样式\",\"link\":\"/articles/css/css原子样式\"},{\"text\":\"css通用默认样式\",\"link\":\"/articles/css/css通用默认样式\"},{\"text\":\"postcss配置\",\"link\":\"/articles/css/postcss配置\"},{\"text\":\"scss\",\"link\":\"/articles/css/scss\"},{\"text\":\"tailwindcss\",\"link\":\"/articles/css/tailwindcss\"},{\"text\":\"常用css\",\"link\":\"/articles/css/常用css\"},{\"text\":\"css生成器\",\"link\":\"/articles/css/css生成器\"},{\"text\":\"sass语法\",\"link\":\"/articles/css/sass语法\"}]},{\"text\":\"常用代码片段\",\"items\":[{\"text\":\"常用正则\",\"link\":\"/articles/常用正则\"},{\"text\":\"常用代码片段\",\"link\":\"/articles/常用代码片段\"}]},{\"text\":\"在线文档\",\"link\":\"/articles/在线文件编辑\"}],\"/tool/\":[{\"text\":\"git\",\"link\":\"/tool/git\"},{\"text\":\"markdown语法\",\"link\":\"/tool/mdsyntax\"},{\"text\":\"gitpage\",\"link\":\"/tool/gitpage\"},{\"text\":\"通义灵码\",\"link\":\"/tool/通义灵码使用\"},{\"text\":\"vscode\",\"link\":\"/tool/vscode\"},{\"text\":\"图床\",\"link\":\"/notes/图床\"}],\"/3D/\":[{\"text\":\"threejs\",\"items\":[{\"text\":\"threejs环境搭建\",\"link\":\"/3D/threejs/threejs-env\"},{\"text\":\"threejs\",\"link\":\"/3D/threejs/threejs\"}]},{\"text\":\"blender\",\"items\":[{\"text\":\"blender快捷键\",\"link\":\"/3D/blender/blender快捷键\"},{\"text\":\"3D模型-光源-动画\",\"link\":\"/3D/blender/3D模型-光源-动画\"},{\"text\":\"blender建模地形\",\"link\":\"/3D/blender/blender建模地形\"}]}],\"/Linux/\":[{\"text\":\"Linux\",\"items\":[{\"text\":\"服务器相关\",\"link\":\"/Linux/服务器相关\"},{\"text\":\"Nginx\",\"link\":\"/Linux/Nginx\"},{\"text\":\"PM2\",\"link\":\"/Linux/pm2\"},{\"text\":\"Linux常用命令\",\"link\":\"/Linux/常用命令\"}]}],\"/notes/\":[{\"text\":\"webrtc\",\"link\":\"/notes/webrtc\"},{\"text\":\"onlyoffice\",\"link\":\"/notes/onlyoffice\"},{\"text\":\"产品经理\",\"link\":\"/notes/产品经理\"},{\"text\":\"http模块\",\"link\":\"/notes/http模块\"}]},\"socialLinks\":[{\"icon\":\"github\",\"link\":\"https://github.com/\"},{\"icon\":{\"svg\":\"<svg role=\\\"img\\\" viewBox=\\\"0 0 24 24\\\" xmlns=\\\"http://www.w3.org/2000/svg\\\"><title>Dribbble</title><path d=\\\"M12...6.38z\\\"/></svg>\"},\"link\":\"http://www.w3.org/\"}]},\"locales\":{\"/\":{\"lang\":\"zh-CN\"}},\"scrollOffset\":90,\"cleanUrls\":false}");</script>
+    
+  </body>
+</html>
